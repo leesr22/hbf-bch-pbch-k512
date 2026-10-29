@@ -28,12 +28,13 @@ contract are unchanged.
 Verification status:
 
 - original selected source: completed VCS bit/status regressions listed in
-  `docs/VERIFICATION.md` and preserved under `sim/logs/`;
+  `docs/VERIFICATION.md`; raw Synopsys logs are local-only;
 - curated source: all four synthesis tops pass installed Verilator elaboration
   and lint with warnings only;
 - a fresh VCS run was attempted, but the current invocation waited for an
   unavailable license. It is not reported as a completed fresh regression;
-- copied UMC28 netlists/reports correspond to the original selected elaboration.
-  A source-identical PPA for the mechanically curated source requires a new DC
-  run ID, as documented in `docs/REPRODUCE.md`.
-
+- local-only UMC28 netlists/reports correspond to the original selected
+  elaboration. They are excluded from the public repository because they are
+  Synopsys-generated/licensed artifacts. A source-identical PPA for the
+  mechanically curated source requires a new DC run ID, as documented in
+  `docs/REPRODUCE.md`.

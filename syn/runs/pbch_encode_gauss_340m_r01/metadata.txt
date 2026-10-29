@@ -1,9 +1,0 @@
-top=pbch_encode_gauss
-clock_period_ns=2.9411764706
-clock_mhz=339.999999999
-corner=SSGWC0P9V125C
-clock_uncertainty_ns=0.20
-io_delay_ns=0.40
-library=/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db
-library_sha256=b5d4d615c9b82f6d0f8108272dee6d969b1ff9cb9165a16b2b7d47860557713b
-external_source_cache_excluded=true

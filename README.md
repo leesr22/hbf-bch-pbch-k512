@@ -17,8 +17,8 @@ received codeword를 보관하는 source cache는 RTL core 밖의 시스템 자�
 ## Directory
 
 - `rtl/`: 최종 합성 가능 RTL
-- `sim/`: golden vectors, testbench, 완료 로그, 재실행 script
-- `syn/`: DC scripts/filelists와 네 채택점의 raw report/netlist/DDC
+- `sim/`: golden vectors, testbench, 재실행 script
+- `syn/`: DC scripts와 selected filelists
 - `results/`: 최종 PPA/throughput와 hierarchy
 - `profiles/`: BCH/PBCH code construction manifest
 - `docs/`: architecture, 검증 범위, PPA 방법
@@ -45,8 +45,9 @@ cd /home/leesr0222/hbf-bch-pbch-final-k512
 sim/scripts/run.sh all
 ```
 
-Synthesis 재실행은 `docs/REPRODUCE.md`를 따른다. UMC28 library는 사용 권한
-때문에 이 폴더에 복사하지 않고 기존 절대 경로를 참조한다.
+Synthesis 재실행은 `docs/REPRODUCE.md`를 따른다. UMC28 library와 Synopsys가
+생성한 compile log/DDC/mapped netlist/raw report는 공개 저장소에 포함하지
+않는다. 서버의 로컬 정리 폴더에는 원본을 그대로 보존했다.
 
 ## Provenance
 
@@ -55,4 +56,3 @@ Synthesis 재실행은 `docs/REPRODUCE.md`를 따른다. UMC28 library는 사용
 - copied PPA runs are immutable completed runs from that commit
 - curated PBCH Encoder removes elaboration-dead Table/Hybrid branches; selected
   Gaussian datapath and interface are unchanged and are rechecked by simulation
-

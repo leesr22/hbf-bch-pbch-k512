@@ -1,3 +1,0 @@
-result=CONSERVATIVE_PASS
-slack_ns=0.160345
-area_um2=1786.175972

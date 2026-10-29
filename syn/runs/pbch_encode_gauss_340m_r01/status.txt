@@ -1,3 +1,0 @@
-result=NOMINAL_PASS_MARGIN_FAIL
-slack_ns=0.000638247
-area_um2=8370.599865

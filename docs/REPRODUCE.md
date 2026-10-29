@@ -25,7 +25,7 @@ The script uses `/tmp/hbf_umc28_dc.global.lock`, one DC job at a time. The
 UMC28 library is referenced at the approved shared-server path and is not
 included in this package.
 
-The copied PBCH Encoder PPA is the original 340-MHz mapped netlist qualified by
-STA at 320 MHz. The curated Gaussian-only source is functionally equivalent but
-must receive a new run ID if a source-identical new netlist is required.
-
+The reported PBCH Encoder PPA came from the original 340-MHz mapped netlist
+qualified by STA at 320 MHz. Raw Synopsys-generated artifacts are retained only
+in the server-local folder and are not published. The curated Gaussian-only
+source must receive a new run ID if a source-identical netlist is required.
