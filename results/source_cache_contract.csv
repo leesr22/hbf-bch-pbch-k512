@@ -1,0 +1,6 @@
+design,direction,external_capacity_bits_per_context,minimum_ports,retention,traffic_per_transaction,generated_state_in_area,excluded_cost
+BCH,Encoder,512,one 128-bit sequential source stream,until parity/codeword retirement,one 512-bit source traversal,parity/tag/control,original message source cache and interconnect
+BCH,Decoder,572,one 64-bit write plus one 64-bit reread,until decoder result and corrected payload retirement,one 572-bit receive write plus one 512-bit corrected reread,correction metadata/context,original received-word source cache and interconnect
+PBCH,Encoder,512,one 64-bit initial stream plus random single-bit reads plus one 64-bit reread,until selector and codeword retirement,one 512-bit initial traversal plus U message-position bit reads plus one 512-bit reread,parity/selector/pivot basis/tags/contexts,original message source cache and row-address interconnect
+PBCH,Decoder,572,one 64-bit write plus one 64-bit reread,until status/selector and payload retirement,one 572-bit receive write plus one 512-bit corrected reread,correction metadata/selector FIFO/recovery pipeline,original received-word source cache and interconnect
+

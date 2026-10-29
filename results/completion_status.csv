@@ -1,0 +1,10 @@
+item,status,evidence
+BCH_Encoder_RTL,COMPLETE,"64 bit-exact vectors; 4096 transaction throughput"
+BCH_Decoder_RTL,COMPLETE,"64 bit/status-exact vectors; 128 exactly-t throughput"
+PBCH_Gaussian_Encoder_RTL,COMPLETE,"64 vectors and 1032 defect rows bit/status-exact"
+PBCH_Decoder_RTL,COMPLETE,"primary64; stress64; randomized-backpressure64"
+BCH_Encoder_PPA,COMPLETE,syn/runs/bch_encode_500m_r02
+BCH_Decoder_PPA,COMPLETE,syn/runs/bch_decode_400m_r01
+PBCH_Encoder_PPA,COMPLETE,"syn/runs/pbch_encode_gauss_340m_r01 mapped netlist STA at 320MHz"
+PBCH_Decoder_PPA,COMPLETE,syn/runs/pbch_decode_fifo_400m_r01
+Physical_place_route,NOT_DONE,"logic synthesis only; ideal-clock hold violations retained"

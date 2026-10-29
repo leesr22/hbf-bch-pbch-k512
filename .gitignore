@@ -1,0 +1,9 @@
+sim/build/
+sim/new_logs/
+sim/logs/
+syn/runs/
+syn/runs/*_new/
+*.vcd
+*.fsdb
+*.key
+ucli.key

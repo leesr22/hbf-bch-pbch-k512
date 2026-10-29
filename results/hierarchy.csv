@@ -1,0 +1,15 @@
+design,instance,function,area_um2,percent
+BCH_Encoder,core,systematic parity LFSR,1785.5040,100.0
+BCH_Decoder,core/u_core,parent correction,12310.1998,73.7
+BCH_Decoder,core/u_core/u_syndrome,syndrome,1736.7840,10.4
+BCH_Decoder,core/u_core/g_shift_window_bm.u_bm,Berlekamp-Massey,4344.1439,26.0
+BCH_Decoder,core/u_core/u_chien,Chien,5871.7679,35.1
+BCH_Decoder,core/g_beat_mask_output.u_message_output,replay/output,4396.3919,26.3
+PBCH_Decoder,correction,parent t4 correction,8310.6239,56.6
+PBCH_Decoder,correction/u_syndrome,syndrome,1154.6640,7.9
+PBCH_Decoder,correction/g_shift_window_bm.u_bm,Berlekamp-Massey,3051.3840,20.8
+PBCH_Decoder,correction/u_chien,Chien,3755.8079,25.6
+PBCH_Decoder,replay,corrected source replay,3028.8720,20.6
+PBCH_Decoder,selectors,ordered selector FIFO,945.5040,6.4
+PBCH_Decoder,output_stage,mask recovery/output,2394.6720,16.3
+PBCH_Gauss_Encoder,core/use_gauss.solver,mask Gaussian solver,2628.6960,31.4
