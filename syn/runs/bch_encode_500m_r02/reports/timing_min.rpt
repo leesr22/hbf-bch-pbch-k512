@@ -1,0 +1,739 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 5
+        -max_paths 20
+Design : bch_encode
+Version: Q-2019.12-SP5-5
+Date   : Thu Oct 29 01:32:50 2026
+****************************************
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: core/message_count_q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/message_count_q_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/message_count_q_reg[1]/CK (STP_FDPRBQ_1)           0.00       0.00 r
+  core/message_count_q_reg[1]/Q (STP_FDPRBQ_1)            0.03       0.03 r
+  core/U436/X (STP_AO2BB2_0P5)                            0.02       0.05 f
+  core/message_count_q_reg[1]/D (STP_FDPRBQ_1)            0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/message_count_q_reg[1]/CK (STP_FDPRBQ_1)           0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/message_count_q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/message_count_q_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/message_count_q_reg[1]/CK (STP_FDPRBQ_1)           0.00       0.00 r
+  core/message_count_q_reg[1]/Q (STP_FDPRBQ_1)            0.03       0.03 r
+  core/U436/X (STP_AO2BB2_0P5)                            0.02       0.05 f
+  core/message_count_q_reg[1]/D (STP_FDPRBQ_1)            0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/message_count_q_reg[1]/CK (STP_FDPRBQ_1)           0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/message_count_q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/message_count_q_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/message_count_q_reg[1]/CK (STP_FDPRBQ_1)           0.00       0.00 r
+  core/message_count_q_reg[1]/Q (STP_FDPRBQ_1)            0.03       0.03 r
+  core/U436/X (STP_AO2BB2_0P5)                            0.02       0.05 f
+  core/message_count_q_reg[1]/D (STP_FDPRBQ_1)            0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/message_count_q_reg[1]/CK (STP_FDPRBQ_1)           0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/remainder_q_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[19]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[19]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U1419/X (STP_AO21B_1)                              0.03       0.07 f
+  core/remainder_q_reg[19]/D (STP_FDPRBQ_1)               0.00       0.07 f
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[19]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.13
+
+
+  Startpoint: core/remainder_q_reg[47]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[47]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[47]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[47]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U1391/X (STP_AO21B_1)                              0.03       0.07 f
+  core/remainder_q_reg[47]/D (STP_FDPRBQ_1)               0.00       0.07 f
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[47]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.13
+
+
+  Startpoint: core/remainder_q_reg[33]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[33]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[33]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[33]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U1430/X (STP_AO21B_1)                              0.03       0.07 f
+  core/remainder_q_reg[33]/D (STP_FDPRBQ_1)               0.00       0.07 f
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[33]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.13
+
+
+  Startpoint: core/remainder_q_reg[28]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[28]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[28]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U1522/X (STP_AO21B_1)                              0.03       0.07 f
+  core/remainder_q_reg[28]/D (STP_FDPRBQ_1)               0.00       0.07 f
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[28]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.13
+
+
+  Startpoint: core/remainder_q_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[5]/CK (STP_FDPRBQ_1)               0.00       0.00 r
+  core/remainder_q_reg[5]/Q (STP_FDPRBQ_1)                0.05       0.05 f
+  core/U1454/X (STP_AO21B_1)                              0.03       0.07 f
+  core/remainder_q_reg[5]/D (STP_FDPRBQ_1)                0.00       0.07 f
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[5]/CK (STP_FDPRBQ_1)               0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.13
+
+
+  Startpoint: core/remainder_q_reg[16]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[16]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[16]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U1484/X (STP_AO21B_1)                              0.03       0.07 f
+  core/remainder_q_reg[16]/D (STP_FDPRBQ_1)               0.00       0.07 f
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[16]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.13
+
+
+  Startpoint: core/remainder_q_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[3]/CK (STP_FDPRBQ_1)               0.00       0.00 r
+  core/remainder_q_reg[3]/Q (STP_FDPRBQ_1)                0.05       0.05 f
+  core/U1444/X (STP_AO21B_1)                              0.03       0.07 f
+  core/remainder_q_reg[3]/D (STP_FDPRBQ_1)                0.00       0.07 f
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[3]/CK (STP_FDPRBQ_1)               0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.13
+
+
+  Startpoint: core/remainder_q_reg[57]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[57]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[57]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[57]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U1594/X (STP_AO21B_1)                              0.03       0.07 f
+  core/remainder_q_reg[57]/D (STP_FDPRBQ_1)               0.00       0.07 f
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[57]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.13
+
+
+  Startpoint: core/remainder_q_reg[59]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[59]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[59]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[59]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U1604/X (STP_AO21B_1)                              0.03       0.07 f
+  core/remainder_q_reg[59]/D (STP_FDPRBQ_1)               0.00       0.07 f
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[59]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.12
+
+
+  Startpoint: core/message_count_q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/state_q_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/message_count_q_reg[1]/CK (STP_FDPRBQ_1)           0.00       0.00 r
+  core/message_count_q_reg[1]/Q (STP_FDPRBQ_1)            0.05       0.05 f
+  core/U921/X (STP_INV_S_0P65)                            0.01       0.06 r
+  core/U922/X (STP_OAI22_0P5)                             0.02       0.07 f
+  core/state_q_reg/D (STP_FDPRBQ_1)                       0.00       0.07 f
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/state_q_reg/CK (STP_FDPRBQ_1)                      0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.12
+
+
+  Startpoint: core/message_count_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/message_count_q_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/message_count_q_reg[0]/CK (STP_FDPRBQ_1)           0.00       0.00 r
+  core/message_count_q_reg[0]/Q (STP_FDPRBQ_1)            0.05       0.05 f
+  core/U873/X (STP_OA21_1)                                0.03       0.08 f
+  core/message_count_q_reg[0]/D (STP_FDPRBQ_1)            0.00       0.08 f
+  data arrival time                                                  0.08
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/message_count_q_reg[0]/CK (STP_FDPRBQ_1)           0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.12
+
+
+  Startpoint: core/remainder_q_reg[22]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[22]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[22]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[22]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U1509/X (STP_AO21B_1)                              0.03       0.08 f
+  core/remainder_q_reg[22]/D (STP_FDPRBQ_1)               0.00       0.08 f
+  data arrival time                                                  0.08
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[22]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.12
+
+
+  Startpoint: core/remainder_q_reg[12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[12]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[12]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U88/X (STP_ND2_S_0P8)                              0.01       0.06 r
+  core/U1369/X (STP_AOAI211_0P5)                          0.01       0.08 f
+  core/remainder_q_reg[12]/D (STP_FDPRBQ_1)               0.00       0.08 f
+  data arrival time                                                  0.08
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[12]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.12
+
+
+  Startpoint: core/remainder_q_reg[20]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[20]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[20]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U87/X (STP_ND2_S_0P8)                              0.01       0.06 r
+  core/U1381/X (STP_AOAI211_0P5)                          0.01       0.08 f
+  core/remainder_q_reg[20]/D (STP_FDPRBQ_1)               0.00       0.08 f
+  data arrival time                                                  0.08
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[20]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.12
+
+
+  Startpoint: core/remainder_q_reg[11]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[11]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[11]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U1405/X (STP_AO21B_1)                              0.03       0.08 f
+  core/remainder_q_reg[11]/D (STP_FDPRBQ_1)               0.00       0.08 f
+  data arrival time                                                  0.08
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[11]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.12
+
+
+  Startpoint: core/remainder_q_reg[18]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[18]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[18]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[18]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U1497/X (STP_AO21B_1)                              0.03       0.08 f
+  core/remainder_q_reg[18]/D (STP_FDPRBQ_1)               0.00       0.08 f
+  data arrival time                                                  0.08
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[18]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.12
+
+
+  Startpoint: core/remainder_q_reg[41]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/remainder_q_reg[41]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_encode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_encoder_codeword_stream_single_state_generic_512_60_128_1b642bb95045c4ad
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/remainder_q_reg[41]/CK (STP_FDPRBQ_1)              0.00       0.00 r
+  core/remainder_q_reg[41]/Q (STP_FDPRBQ_1)               0.05       0.05 f
+  core/U1559/X (STP_AO21B_1)                              0.03       0.08 f
+  core/remainder_q_reg[41]/D (STP_FDPRBQ_1)               0.00       0.08 f
+  data arrival time                                                  0.08
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/remainder_q_reg[41]/CK (STP_FDPRBQ_1)              0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.08
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.12
+
+
+1

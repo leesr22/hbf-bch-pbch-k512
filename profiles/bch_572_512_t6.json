@@ -1,0 +1,110 @@
+{
+  "name": "bch_572_512_t6",
+  "message_bits": 512,
+  "m": 10,
+  "t": 6,
+  "primitive_polynomial": 1033,
+  "generator_polynomial": 1973750611610813613,
+  "redundancy_bits": 60,
+  "codeword_bits": 572,
+  "mother_codeword_bits": 1023,
+  "mother_message_bits": 963,
+  "shortening_bits": 451,
+  "code_rate": 0.8951048951048951,
+  "next_t": 7,
+  "next_t_redundancy_bits": 70,
+  "next_t_code_rate": 0.8797250859106529,
+  "cyclotomic_cosets": [
+    [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    [
+      3,
+      6,
+      12,
+      24,
+      48,
+      96,
+      192,
+      384,
+      768,
+      513
+    ],
+    [
+      5,
+      10,
+      20,
+      40,
+      80,
+      160,
+      320,
+      640,
+      257,
+      514
+    ],
+    [
+      7,
+      14,
+      28,
+      56,
+      112,
+      224,
+      448,
+      896,
+      769,
+      515
+    ],
+    [
+      9,
+      18,
+      36,
+      72,
+      144,
+      288,
+      576,
+      129,
+      258,
+      516
+    ],
+    [
+      11,
+      22,
+      44,
+      88,
+      176,
+      352,
+      704,
+      385,
+      770,
+      517
+    ]
+  ],
+  "minimal_polynomials": [
+    1033,
+    1039,
+    1293,
+    2041,
+    1199,
+    1077
+  ],
+  "bit_mapping": "Integer bit i is coefficient x^i. Shortening fixes mother-code coefficients x^572..x^1022 to zero and transmits x^0..x^571. The systematic message occupies x^r..x^(r+k-1); parity occupies x^0..x^(r-1).",
+  "primitive_polynomial_hex": "0x409",
+  "generator_polynomial_hex": "0x1b642bb95045c4ad",
+  "minimal_polynomials_hex": [
+    "0x409",
+    "0x40f",
+    "0x50d",
+    "0x7f9",
+    "0x4af",
+    "0x435"
+  ]
+}

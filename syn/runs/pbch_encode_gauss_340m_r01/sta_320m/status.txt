@@ -1,0 +1,5 @@
+result=CONSERVATIVE_PASS
+slack_ns=0.184462
+clock_period_ns=3.125
+clock_mhz=320.0
+scope=mapped_netlist_operating_point

@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : area
+Design : pbch_encode_gauss
+Version: Q-2019.12-SP5-5
+Date   : Thu Oct 29 01:40:50 2026
+****************************************
+
+Library(s) Used:
+
+    um28nchslogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                          681
+Number of nets:                          8785
+Number of cells:                         8265
+Number of combinational cells:           7591
+Number of sequential cells:               672
+Number of macros/black boxes:               0
+Number of buf/inv:                       1054
+Number of references:                       3
+
+Combinational area:               6351.239911
+Buf/Inv area:                      355.151995
+Noncombinational area:            2019.359954
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  8370.599865
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  -------------------
+pbch_encode_gauss                 8370.5999    100.0     1.3440     0.0000  0.0000  pbch_encode_gauss
+core                              8369.2559    100.0  5026.5599   714.0000  0.0000  pbch_encode_METHOD0
+core/use_gauss.solver             2628.6960     31.4  1323.3360  1305.3600  0.0000  mask_gauss
+--------------------------------  ---------  -------  ---------  ---------  ------  -------------------
+Total                                                 6351.2399  2019.3600  0.0000
+
+1

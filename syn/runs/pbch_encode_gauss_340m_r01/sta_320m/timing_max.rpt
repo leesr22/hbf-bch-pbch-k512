@@ -1,0 +1,2298 @@
+Information: Changed wire load model for 'pbch_encode_gauss' from '(none)' to 'ZeroWLM'. (OPT-170)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 20
+Design : pbch_encode_gauss
+Version: Q-2019.12-SP5-5
+Date   : Thu Oct 29 01:49:02 2026
+****************************************
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/selector_q_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[0]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/use_gauss.solver/U405/X (STP_ND2_S_0P8)            0.02       0.05 f
+  core/use_gauss.solver/U406/X (STP_INV_S_1)              0.04       0.10 r
+  core/use_gauss.solver/U15/X (STP_ND2_S_1)               0.03       0.13 f
+  core/use_gauss.solver/U210/X (STP_INV_S_0P65)           0.02       0.14 r
+  core/use_gauss.solver/U227/X (STP_OAI221_0P5)           0.04       0.19 f
+  core/use_gauss.solver/U340/X (STP_NR2_G_0P5)            0.03       0.21 r
+  core/use_gauss.solver/U339/X (STP_EO3_0P5)              0.08       0.29 r
+  core/use_gauss.solver/U398/X (STP_ND2_G_1)              0.06       0.35 f
+  core/use_gauss.solver/U408/X (STP_NR2_G_0P8)            0.03       0.38 r
+  core/use_gauss.solver/U337/X (STP_EO3_0P5)              0.08       0.46 f
+  core/use_gauss.solver/U336/X (STP_AOI31_0P5)            0.02       0.48 r
+  core/use_gauss.solver/U335/X (STP_AOAI211_0P5)          0.12       0.61 f
+  core/use_gauss.solver/U409/X (STP_NR2_G_0P8)            0.05       0.66 r
+  core/use_gauss.solver/U251/X (STP_EN3_1)                0.04       0.69 r
+  core/use_gauss.solver/U415/X (STP_NR2_G_0P8)            0.02       0.72 f
+  core/use_gauss.solver/U19/X (STP_AOI31_0P5)             0.04       0.76 r
+  core/use_gauss.solver/U426/X (STP_AOAI211_2)            0.05       0.81 f
+  core/use_gauss.solver/U442/X (STP_NR2_G_0P8)            0.03       0.84 r
+  core/use_gauss.solver/U334/X (STP_EN3_1)                0.04       0.88 f
+  core/use_gauss.solver/U333/X (STP_NR2_G_0P5)            0.03       0.91 r
+  core/use_gauss.solver/U460/X (STP_INV_S_1)              0.04       0.95 f
+  core/use_gauss.solver/U461/X (STP_NR2_G_0P8)            0.02       0.98 r
+  core/use_gauss.solver/U474/X (STP_EO3_0P5)              0.04       1.01 f
+  core/use_gauss.solver/U475/X (STP_EO3_0P5)              0.08       1.10 r
+  core/use_gauss.solver/U331/X (STP_ND2_G_1)              0.05       1.14 f
+  core/use_gauss.solver/U393/X (STP_NR2_G_0P5)            0.03       1.18 r
+  core/use_gauss.solver/U491/X (STP_EO3_0P5)              0.03       1.21 r
+  core/use_gauss.solver/U492/X (STP_AOAI211_0P5)          0.02       1.23 f
+  core/use_gauss.solver/U493/X (STP_AOI31_0P5)            0.08       1.31 r
+  core/use_gauss.solver/U515/X (STP_ND2_S_0P8)            0.03       1.34 f
+  core/use_gauss.solver/U516/X (STP_EO3_0P5)              0.09       1.43 f
+  core/use_gauss.solver/U517/X (STP_EO3_0P5)              0.08       1.51 r
+  core/use_gauss.solver/U158/X (STP_ND2_G_1)              0.03       1.54 f
+  core/use_gauss.solver/U546/X (STP_NR2_G_0P8)            0.02       1.56 r
+  core/use_gauss.solver/U567/X (STP_EO3_0P5)              0.08       1.64 r
+  core/use_gauss.solver/U328/X (STP_OA21B_1)              0.03       1.67 r
+  core/use_gauss.solver/U327/X (STP_ND2_G_1)              0.04       1.71 f
+  core/use_gauss.solver/U568/X (STP_NR2_G_0P8)            0.03       1.73 r
+  core/use_gauss.solver/U589/X (STP_EO3_0P5)              0.04       1.77 f
+  core/use_gauss.solver/U590/X (STP_EO3_0P5)              0.09       1.86 f
+  core/use_gauss.solver/U138/X (STP_ND2_1P5)              0.02       1.88 r
+  core/use_gauss.solver/U591/X (STP_INV_S_0P65)           0.02       1.90 f
+  core/use_gauss.solver/U619/X (STP_AOI31_1)              0.02       1.92 r
+  core/use_gauss.solver/U620/X (STP_AOAI211_0P75)         0.04       1.96 f
+  core/use_gauss.solver/U326/X (STP_INV_S_0P65)           0.03       1.99 r
+  core/use_gauss.solver/U621/X (STP_ND2_S_0P8)            0.02       2.01 f
+  core/use_gauss.solver/U297/X (STP_EO3_0P5)              0.09       2.10 f
+  core/use_gauss.solver/U624/X (STP_EO3_0P5)              0.05       2.14 r
+  core/use_gauss.solver/U625/X (STP_NR2_G_0P8)            0.02       2.16 f
+  core/use_gauss.solver/U325/X (STP_AOI31_0P5)            0.03       2.19 r
+  core/use_gauss.solver/U324/X (STP_AOAI211_0P5)          0.05       2.24 f
+  core/use_gauss.solver/U729/X (STP_NR2_G_0P8)            0.03       2.27 r
+  core/use_gauss.solver/U107/X (STP_EO3_1)                0.07       2.34 f
+  core/use_gauss.solver/U730/X (STP_NR2_G_0P8)            0.03       2.36 r
+  core/use_gauss.solver/U736/X (STP_INV_S_0P65)           0.02       2.38 f
+  core/use_gauss.solver/U296/X (STP_NR2_G_0P5)            0.02       2.40 r
+  core/use_gauss.solver/U772/X (STP_EO3_0P5)              0.04       2.45 f
+  core/use_gauss.solver/U97/X (STP_EO3_1)                 0.08       2.52 f
+  core/use_gauss.solver/U773/X (STP_ND2_S_0P8)            0.02       2.54 r
+  core/use_gauss.solver/U250/X (STP_NR2_G_0P5)            0.01       2.56 f
+  core/use_gauss.solver/U814/X (STP_EO3_0P5)              0.04       2.60 r
+  core/use_gauss.solver/U377/X (STP_AOAI211_0P5)          0.02       2.62 f
+  core/use_gauss.solver/U816/X (STP_AOI31_0P5)            0.03       2.65 r
+  core/use_gauss.solver/U376/X (STP_AO22_0P5)             0.04       2.69 r
+  core/use_gauss.solver/selector_q_reg[19]/D (STP_FDPRBQ_1)
+                                                          0.00       2.69 r
+  data arrival time                                                  2.69
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/selector_q_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.88
+  data required time                                                 2.88
+  --------------------------------------------------------------------------
+  data required time                                                 2.88
+  data arrival time                                                 -2.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.18
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/selector_q_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[0]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/use_gauss.solver/U405/X (STP_ND2_S_0P8)            0.02       0.05 f
+  core/use_gauss.solver/U406/X (STP_INV_S_1)              0.04       0.10 r
+  core/use_gauss.solver/U15/X (STP_ND2_S_1)               0.03       0.13 f
+  core/use_gauss.solver/U210/X (STP_INV_S_0P65)           0.02       0.14 r
+  core/use_gauss.solver/U227/X (STP_OAI221_0P5)           0.04       0.19 f
+  core/use_gauss.solver/U340/X (STP_NR2_G_0P5)            0.03       0.21 r
+  core/use_gauss.solver/U339/X (STP_EO3_0P5)              0.08       0.29 r
+  core/use_gauss.solver/U398/X (STP_ND2_G_1)              0.06       0.35 f
+  core/use_gauss.solver/U408/X (STP_NR2_G_0P8)            0.03       0.38 r
+  core/use_gauss.solver/U337/X (STP_EO3_0P5)              0.08       0.46 f
+  core/use_gauss.solver/U336/X (STP_AOI31_0P5)            0.02       0.48 r
+  core/use_gauss.solver/U335/X (STP_AOAI211_0P5)          0.12       0.61 f
+  core/use_gauss.solver/U409/X (STP_NR2_G_0P8)            0.05       0.66 r
+  core/use_gauss.solver/U251/X (STP_EN3_1)                0.04       0.69 r
+  core/use_gauss.solver/U415/X (STP_NR2_G_0P8)            0.02       0.72 f
+  core/use_gauss.solver/U19/X (STP_AOI31_0P5)             0.04       0.76 r
+  core/use_gauss.solver/U426/X (STP_AOAI211_2)            0.05       0.81 f
+  core/use_gauss.solver/U442/X (STP_NR2_G_0P8)            0.03       0.84 r
+  core/use_gauss.solver/U334/X (STP_EN3_1)                0.04       0.88 f
+  core/use_gauss.solver/U333/X (STP_NR2_G_0P5)            0.03       0.91 r
+  core/use_gauss.solver/U460/X (STP_INV_S_1)              0.04       0.95 f
+  core/use_gauss.solver/U461/X (STP_NR2_G_0P8)            0.02       0.98 r
+  core/use_gauss.solver/U474/X (STP_EO3_0P5)              0.04       1.01 f
+  core/use_gauss.solver/U475/X (STP_EO3_0P5)              0.08       1.10 r
+  core/use_gauss.solver/U331/X (STP_ND2_G_1)              0.05       1.14 f
+  core/use_gauss.solver/U393/X (STP_NR2_G_0P5)            0.03       1.18 r
+  core/use_gauss.solver/U491/X (STP_EO3_0P5)              0.03       1.21 r
+  core/use_gauss.solver/U492/X (STP_AOAI211_0P5)          0.02       1.23 f
+  core/use_gauss.solver/U493/X (STP_AOI31_0P5)            0.08       1.31 r
+  core/use_gauss.solver/U515/X (STP_ND2_S_0P8)            0.03       1.34 f
+  core/use_gauss.solver/U516/X (STP_EO3_0P5)              0.09       1.43 f
+  core/use_gauss.solver/U517/X (STP_EO3_0P5)              0.08       1.51 r
+  core/use_gauss.solver/U158/X (STP_ND2_G_1)              0.03       1.54 f
+  core/use_gauss.solver/U546/X (STP_NR2_G_0P8)            0.02       1.56 r
+  core/use_gauss.solver/U567/X (STP_EO3_0P5)              0.08       1.64 r
+  core/use_gauss.solver/U328/X (STP_OA21B_1)              0.03       1.67 r
+  core/use_gauss.solver/U327/X (STP_ND2_G_1)              0.04       1.71 f
+  core/use_gauss.solver/U568/X (STP_NR2_G_0P8)            0.03       1.73 r
+  core/use_gauss.solver/U589/X (STP_EO3_0P5)              0.04       1.77 f
+  core/use_gauss.solver/U590/X (STP_EO3_0P5)              0.09       1.86 f
+  core/use_gauss.solver/U138/X (STP_ND2_1P5)              0.02       1.88 r
+  core/use_gauss.solver/U591/X (STP_INV_S_0P65)           0.02       1.90 f
+  core/use_gauss.solver/U619/X (STP_AOI31_1)              0.02       1.92 r
+  core/use_gauss.solver/U620/X (STP_AOAI211_0P75)         0.04       1.96 f
+  core/use_gauss.solver/U326/X (STP_INV_S_0P65)           0.03       1.99 r
+  core/use_gauss.solver/U621/X (STP_ND2_S_0P8)            0.02       2.01 f
+  core/use_gauss.solver/U297/X (STP_EO3_0P5)              0.09       2.10 f
+  core/use_gauss.solver/U624/X (STP_EO3_0P5)              0.05       2.14 r
+  core/use_gauss.solver/U625/X (STP_NR2_G_0P8)            0.02       2.16 f
+  core/use_gauss.solver/U325/X (STP_AOI31_0P5)            0.03       2.19 r
+  core/use_gauss.solver/U324/X (STP_AOAI211_0P5)          0.05       2.24 f
+  core/use_gauss.solver/U729/X (STP_NR2_G_0P8)            0.03       2.27 r
+  core/use_gauss.solver/U107/X (STP_EO3_1)                0.07       2.34 f
+  core/use_gauss.solver/U730/X (STP_NR2_G_0P8)            0.03       2.36 r
+  core/use_gauss.solver/U736/X (STP_INV_S_0P65)           0.02       2.38 f
+  core/use_gauss.solver/U296/X (STP_NR2_G_0P5)            0.02       2.40 r
+  core/use_gauss.solver/U772/X (STP_EO3_0P5)              0.04       2.45 f
+  core/use_gauss.solver/U97/X (STP_EO3_1)                 0.08       2.52 f
+  core/use_gauss.solver/U773/X (STP_ND2_S_0P8)            0.02       2.54 r
+  core/use_gauss.solver/U250/X (STP_NR2_G_0P5)            0.01       2.56 f
+  core/use_gauss.solver/U814/X (STP_EO3_0P5)              0.04       2.60 r
+  core/use_gauss.solver/U377/X (STP_AOAI211_0P5)          0.02       2.62 f
+  core/use_gauss.solver/U816/X (STP_AOI31_0P5)            0.03       2.65 r
+  core/use_gauss.solver/U376/X (STP_AO22_0P5)             0.04       2.69 r
+  core/use_gauss.solver/selector_q_reg[19]/D (STP_FDPRBQ_1)
+                                                          0.00       2.69 r
+  data arrival time                                                  2.69
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/selector_q_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.88
+  data required time                                                 2.88
+  --------------------------------------------------------------------------
+  data required time                                                 2.88
+  data arrival time                                                 -2.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.18
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/selector_q_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[0]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/use_gauss.solver/U405/X (STP_ND2_S_0P8)            0.02       0.05 f
+  core/use_gauss.solver/U406/X (STP_INV_S_1)              0.04       0.10 r
+  core/use_gauss.solver/U15/X (STP_ND2_S_1)               0.03       0.13 f
+  core/use_gauss.solver/U210/X (STP_INV_S_0P65)           0.02       0.14 r
+  core/use_gauss.solver/U227/X (STP_OAI221_0P5)           0.04       0.19 f
+  core/use_gauss.solver/U340/X (STP_NR2_G_0P5)            0.03       0.21 r
+  core/use_gauss.solver/U339/X (STP_EO3_0P5)              0.08       0.29 r
+  core/use_gauss.solver/U398/X (STP_ND2_G_1)              0.06       0.35 f
+  core/use_gauss.solver/U408/X (STP_NR2_G_0P8)            0.03       0.38 r
+  core/use_gauss.solver/U337/X (STP_EO3_0P5)              0.08       0.46 f
+  core/use_gauss.solver/U336/X (STP_AOI31_0P5)            0.02       0.48 r
+  core/use_gauss.solver/U335/X (STP_AOAI211_0P5)          0.12       0.61 f
+  core/use_gauss.solver/U409/X (STP_NR2_G_0P8)            0.05       0.66 r
+  core/use_gauss.solver/U251/X (STP_EN3_1)                0.04       0.69 r
+  core/use_gauss.solver/U415/X (STP_NR2_G_0P8)            0.02       0.72 f
+  core/use_gauss.solver/U19/X (STP_AOI31_0P5)             0.04       0.76 r
+  core/use_gauss.solver/U426/X (STP_AOAI211_2)            0.05       0.81 f
+  core/use_gauss.solver/U442/X (STP_NR2_G_0P8)            0.03       0.84 r
+  core/use_gauss.solver/U334/X (STP_EN3_1)                0.04       0.88 f
+  core/use_gauss.solver/U333/X (STP_NR2_G_0P5)            0.03       0.91 r
+  core/use_gauss.solver/U460/X (STP_INV_S_1)              0.04       0.95 f
+  core/use_gauss.solver/U461/X (STP_NR2_G_0P8)            0.02       0.98 r
+  core/use_gauss.solver/U474/X (STP_EO3_0P5)              0.04       1.01 f
+  core/use_gauss.solver/U475/X (STP_EO3_0P5)              0.08       1.10 r
+  core/use_gauss.solver/U331/X (STP_ND2_G_1)              0.05       1.14 f
+  core/use_gauss.solver/U393/X (STP_NR2_G_0P5)            0.03       1.18 r
+  core/use_gauss.solver/U491/X (STP_EO3_0P5)              0.03       1.21 r
+  core/use_gauss.solver/U492/X (STP_AOAI211_0P5)          0.02       1.23 f
+  core/use_gauss.solver/U493/X (STP_AOI31_0P5)            0.08       1.31 r
+  core/use_gauss.solver/U515/X (STP_ND2_S_0P8)            0.03       1.34 f
+  core/use_gauss.solver/U516/X (STP_EO3_0P5)              0.09       1.43 f
+  core/use_gauss.solver/U517/X (STP_EO3_0P5)              0.08       1.51 r
+  core/use_gauss.solver/U158/X (STP_ND2_G_1)              0.03       1.54 f
+  core/use_gauss.solver/U546/X (STP_NR2_G_0P8)            0.02       1.56 r
+  core/use_gauss.solver/U567/X (STP_EO3_0P5)              0.08       1.64 r
+  core/use_gauss.solver/U328/X (STP_OA21B_1)              0.03       1.67 r
+  core/use_gauss.solver/U327/X (STP_ND2_G_1)              0.04       1.71 f
+  core/use_gauss.solver/U568/X (STP_NR2_G_0P8)            0.03       1.73 r
+  core/use_gauss.solver/U589/X (STP_EO3_0P5)              0.04       1.77 f
+  core/use_gauss.solver/U590/X (STP_EO3_0P5)              0.09       1.86 f
+  core/use_gauss.solver/U138/X (STP_ND2_1P5)              0.02       1.88 r
+  core/use_gauss.solver/U591/X (STP_INV_S_0P65)           0.02       1.90 f
+  core/use_gauss.solver/U619/X (STP_AOI31_1)              0.02       1.92 r
+  core/use_gauss.solver/U620/X (STP_AOAI211_0P75)         0.04       1.96 f
+  core/use_gauss.solver/U326/X (STP_INV_S_0P65)           0.03       1.99 r
+  core/use_gauss.solver/U621/X (STP_ND2_S_0P8)            0.02       2.01 f
+  core/use_gauss.solver/U297/X (STP_EO3_0P5)              0.09       2.10 f
+  core/use_gauss.solver/U624/X (STP_EO3_0P5)              0.05       2.14 r
+  core/use_gauss.solver/U625/X (STP_NR2_G_0P8)            0.02       2.16 f
+  core/use_gauss.solver/U325/X (STP_AOI31_0P5)            0.03       2.19 r
+  core/use_gauss.solver/U324/X (STP_AOAI211_0P5)          0.05       2.24 f
+  core/use_gauss.solver/U729/X (STP_NR2_G_0P8)            0.03       2.27 r
+  core/use_gauss.solver/U107/X (STP_EO3_1)                0.07       2.34 f
+  core/use_gauss.solver/U730/X (STP_NR2_G_0P8)            0.03       2.36 r
+  core/use_gauss.solver/U736/X (STP_INV_S_0P65)           0.02       2.38 f
+  core/use_gauss.solver/U296/X (STP_NR2_G_0P5)            0.02       2.40 r
+  core/use_gauss.solver/U772/X (STP_EO3_0P5)              0.04       2.45 f
+  core/use_gauss.solver/U97/X (STP_EO3_1)                 0.08       2.52 f
+  core/use_gauss.solver/U773/X (STP_ND2_S_0P8)            0.02       2.54 r
+  core/use_gauss.solver/U250/X (STP_NR2_G_0P5)            0.01       2.56 f
+  core/use_gauss.solver/U814/X (STP_EO3_0P5)              0.04       2.60 r
+  core/use_gauss.solver/U377/X (STP_AOAI211_0P5)          0.02       2.62 f
+  core/use_gauss.solver/U816/X (STP_AOI31_0P5)            0.03       2.65 r
+  core/use_gauss.solver/U376/X (STP_AO22_0P5)             0.04       2.69 r
+  core/use_gauss.solver/selector_q_reg[19]/D (STP_FDPRBQ_1)
+                                                          0.00       2.69 r
+  data arrival time                                                  2.69
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/selector_q_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.88
+  data required time                                                 2.88
+  --------------------------------------------------------------------------
+  data required time                                                 2.88
+  data arrival time                                                 -2.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.18
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/selector_q_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[0]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/use_gauss.solver/U405/X (STP_ND2_S_0P8)            0.02       0.05 f
+  core/use_gauss.solver/U406/X (STP_INV_S_1)              0.04       0.10 r
+  core/use_gauss.solver/U15/X (STP_ND2_S_1)               0.03       0.13 f
+  core/use_gauss.solver/U210/X (STP_INV_S_0P65)           0.02       0.14 r
+  core/use_gauss.solver/U227/X (STP_OAI221_0P5)           0.04       0.19 f
+  core/use_gauss.solver/U340/X (STP_NR2_G_0P5)            0.03       0.21 r
+  core/use_gauss.solver/U339/X (STP_EO3_0P5)              0.08       0.29 r
+  core/use_gauss.solver/U398/X (STP_ND2_G_1)              0.06       0.35 f
+  core/use_gauss.solver/U408/X (STP_NR2_G_0P8)            0.03       0.38 r
+  core/use_gauss.solver/U337/X (STP_EO3_0P5)              0.08       0.46 f
+  core/use_gauss.solver/U336/X (STP_AOI31_0P5)            0.02       0.48 r
+  core/use_gauss.solver/U335/X (STP_AOAI211_0P5)          0.12       0.61 f
+  core/use_gauss.solver/U409/X (STP_NR2_G_0P8)            0.05       0.66 r
+  core/use_gauss.solver/U251/X (STP_EN3_1)                0.04       0.69 r
+  core/use_gauss.solver/U415/X (STP_NR2_G_0P8)            0.02       0.72 f
+  core/use_gauss.solver/U19/X (STP_AOI31_0P5)             0.04       0.76 r
+  core/use_gauss.solver/U426/X (STP_AOAI211_2)            0.05       0.81 f
+  core/use_gauss.solver/U442/X (STP_NR2_G_0P8)            0.03       0.84 r
+  core/use_gauss.solver/U334/X (STP_EN3_1)                0.04       0.88 f
+  core/use_gauss.solver/U333/X (STP_NR2_G_0P5)            0.03       0.91 r
+  core/use_gauss.solver/U460/X (STP_INV_S_1)              0.04       0.95 f
+  core/use_gauss.solver/U461/X (STP_NR2_G_0P8)            0.02       0.98 r
+  core/use_gauss.solver/U474/X (STP_EO3_0P5)              0.04       1.01 f
+  core/use_gauss.solver/U475/X (STP_EO3_0P5)              0.08       1.10 r
+  core/use_gauss.solver/U331/X (STP_ND2_G_1)              0.05       1.14 f
+  core/use_gauss.solver/U393/X (STP_NR2_G_0P5)            0.03       1.18 r
+  core/use_gauss.solver/U491/X (STP_EO3_0P5)              0.03       1.21 r
+  core/use_gauss.solver/U492/X (STP_AOAI211_0P5)          0.02       1.23 f
+  core/use_gauss.solver/U493/X (STP_AOI31_0P5)            0.08       1.31 r
+  core/use_gauss.solver/U515/X (STP_ND2_S_0P8)            0.03       1.34 f
+  core/use_gauss.solver/U516/X (STP_EO3_0P5)              0.09       1.43 f
+  core/use_gauss.solver/U517/X (STP_EO3_0P5)              0.08       1.51 r
+  core/use_gauss.solver/U158/X (STP_ND2_G_1)              0.03       1.54 f
+  core/use_gauss.solver/U546/X (STP_NR2_G_0P8)            0.02       1.56 r
+  core/use_gauss.solver/U567/X (STP_EO3_0P5)              0.08       1.64 r
+  core/use_gauss.solver/U328/X (STP_OA21B_1)              0.03       1.67 r
+  core/use_gauss.solver/U327/X (STP_ND2_G_1)              0.04       1.71 f
+  core/use_gauss.solver/U568/X (STP_NR2_G_0P8)            0.03       1.73 r
+  core/use_gauss.solver/U589/X (STP_EO3_0P5)              0.04       1.77 f
+  core/use_gauss.solver/U590/X (STP_EO3_0P5)              0.09       1.86 f
+  core/use_gauss.solver/U138/X (STP_ND2_1P5)              0.02       1.88 r
+  core/use_gauss.solver/U591/X (STP_INV_S_0P65)           0.02       1.90 f
+  core/use_gauss.solver/U619/X (STP_AOI31_1)              0.02       1.92 r
+  core/use_gauss.solver/U620/X (STP_AOAI211_0P75)         0.04       1.96 f
+  core/use_gauss.solver/U326/X (STP_INV_S_0P65)           0.03       1.99 r
+  core/use_gauss.solver/U621/X (STP_ND2_S_0P8)            0.02       2.01 f
+  core/use_gauss.solver/U297/X (STP_EO3_0P5)              0.09       2.10 f
+  core/use_gauss.solver/U624/X (STP_EO3_0P5)              0.05       2.14 r
+  core/use_gauss.solver/U625/X (STP_NR2_G_0P8)            0.02       2.16 f
+  core/use_gauss.solver/U325/X (STP_AOI31_0P5)            0.03       2.19 r
+  core/use_gauss.solver/U324/X (STP_AOAI211_0P5)          0.05       2.24 f
+  core/use_gauss.solver/U729/X (STP_NR2_G_0P8)            0.03       2.27 r
+  core/use_gauss.solver/U107/X (STP_EO3_1)                0.07       2.34 f
+  core/use_gauss.solver/U730/X (STP_NR2_G_0P8)            0.03       2.36 r
+  core/use_gauss.solver/U736/X (STP_INV_S_0P65)           0.02       2.38 f
+  core/use_gauss.solver/U296/X (STP_NR2_G_0P5)            0.02       2.40 r
+  core/use_gauss.solver/U772/X (STP_EO3_0P5)              0.04       2.45 f
+  core/use_gauss.solver/U97/X (STP_EO3_1)                 0.08       2.52 f
+  core/use_gauss.solver/U773/X (STP_ND2_S_0P8)            0.02       2.54 r
+  core/use_gauss.solver/U250/X (STP_NR2_G_0P5)            0.01       2.56 f
+  core/use_gauss.solver/U814/X (STP_EO3_0P5)              0.04       2.60 r
+  core/use_gauss.solver/U377/X (STP_AOAI211_0P5)          0.02       2.62 f
+  core/use_gauss.solver/U816/X (STP_AOI31_0P5)            0.03       2.65 r
+  core/use_gauss.solver/U376/X (STP_AO22_0P5)             0.04       2.69 r
+  core/use_gauss.solver/selector_q_reg[19]/D (STP_FDPRBQ_1)
+                                                          0.00       2.69 r
+  data arrival time                                                  2.69
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/selector_q_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.88
+  data required time                                                 2.88
+  --------------------------------------------------------------------------
+  data required time                                                 2.88
+  data arrival time                                                 -2.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.18
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/selector_q_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[0]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/use_gauss.solver/U405/X (STP_ND2_S_0P8)            0.02       0.05 f
+  core/use_gauss.solver/U406/X (STP_INV_S_1)              0.04       0.10 r
+  core/use_gauss.solver/U15/X (STP_ND2_S_1)               0.03       0.13 f
+  core/use_gauss.solver/U210/X (STP_INV_S_0P65)           0.02       0.14 r
+  core/use_gauss.solver/U227/X (STP_OAI221_0P5)           0.04       0.19 f
+  core/use_gauss.solver/U340/X (STP_NR2_G_0P5)            0.03       0.21 r
+  core/use_gauss.solver/U339/X (STP_EO3_0P5)              0.08       0.29 r
+  core/use_gauss.solver/U398/X (STP_ND2_G_1)              0.06       0.35 f
+  core/use_gauss.solver/U408/X (STP_NR2_G_0P8)            0.03       0.38 r
+  core/use_gauss.solver/U337/X (STP_EO3_0P5)              0.08       0.46 f
+  core/use_gauss.solver/U336/X (STP_AOI31_0P5)            0.02       0.48 r
+  core/use_gauss.solver/U335/X (STP_AOAI211_0P5)          0.12       0.61 f
+  core/use_gauss.solver/U409/X (STP_NR2_G_0P8)            0.05       0.66 r
+  core/use_gauss.solver/U251/X (STP_EN3_1)                0.04       0.69 r
+  core/use_gauss.solver/U415/X (STP_NR2_G_0P8)            0.02       0.72 f
+  core/use_gauss.solver/U19/X (STP_AOI31_0P5)             0.04       0.76 r
+  core/use_gauss.solver/U426/X (STP_AOAI211_2)            0.05       0.81 f
+  core/use_gauss.solver/U442/X (STP_NR2_G_0P8)            0.03       0.84 r
+  core/use_gauss.solver/U334/X (STP_EN3_1)                0.04       0.88 f
+  core/use_gauss.solver/U333/X (STP_NR2_G_0P5)            0.03       0.91 r
+  core/use_gauss.solver/U460/X (STP_INV_S_1)              0.04       0.95 f
+  core/use_gauss.solver/U461/X (STP_NR2_G_0P8)            0.02       0.98 r
+  core/use_gauss.solver/U474/X (STP_EO3_0P5)              0.04       1.01 f
+  core/use_gauss.solver/U475/X (STP_EO3_0P5)              0.08       1.10 r
+  core/use_gauss.solver/U331/X (STP_ND2_G_1)              0.05       1.14 f
+  core/use_gauss.solver/U393/X (STP_NR2_G_0P5)            0.03       1.18 r
+  core/use_gauss.solver/U491/X (STP_EO3_0P5)              0.03       1.21 r
+  core/use_gauss.solver/U492/X (STP_AOAI211_0P5)          0.02       1.23 f
+  core/use_gauss.solver/U493/X (STP_AOI31_0P5)            0.08       1.31 r
+  core/use_gauss.solver/U515/X (STP_ND2_S_0P8)            0.03       1.34 f
+  core/use_gauss.solver/U516/X (STP_EO3_0P5)              0.09       1.43 f
+  core/use_gauss.solver/U517/X (STP_EO3_0P5)              0.08       1.51 r
+  core/use_gauss.solver/U158/X (STP_ND2_G_1)              0.03       1.54 f
+  core/use_gauss.solver/U546/X (STP_NR2_G_0P8)            0.02       1.56 r
+  core/use_gauss.solver/U567/X (STP_EO3_0P5)              0.08       1.64 r
+  core/use_gauss.solver/U328/X (STP_OA21B_1)              0.03       1.67 r
+  core/use_gauss.solver/U327/X (STP_ND2_G_1)              0.04       1.71 f
+  core/use_gauss.solver/U568/X (STP_NR2_G_0P8)            0.03       1.73 r
+  core/use_gauss.solver/U589/X (STP_EO3_0P5)              0.04       1.77 f
+  core/use_gauss.solver/U590/X (STP_EO3_0P5)              0.09       1.86 f
+  core/use_gauss.solver/U138/X (STP_ND2_1P5)              0.02       1.88 r
+  core/use_gauss.solver/U591/X (STP_INV_S_0P65)           0.02       1.90 f
+  core/use_gauss.solver/U619/X (STP_AOI31_1)              0.02       1.92 r
+  core/use_gauss.solver/U620/X (STP_AOAI211_0P75)         0.04       1.96 f
+  core/use_gauss.solver/U326/X (STP_INV_S_0P65)           0.03       1.99 r
+  core/use_gauss.solver/U621/X (STP_ND2_S_0P8)            0.02       2.01 f
+  core/use_gauss.solver/U297/X (STP_EO3_0P5)              0.09       2.10 f
+  core/use_gauss.solver/U624/X (STP_EO3_0P5)              0.05       2.14 r
+  core/use_gauss.solver/U625/X (STP_NR2_G_0P8)            0.02       2.16 f
+  core/use_gauss.solver/U325/X (STP_AOI31_0P5)            0.03       2.19 r
+  core/use_gauss.solver/U324/X (STP_AOAI211_0P5)          0.05       2.24 f
+  core/use_gauss.solver/U729/X (STP_NR2_G_0P8)            0.03       2.27 r
+  core/use_gauss.solver/U107/X (STP_EO3_1)                0.07       2.34 f
+  core/use_gauss.solver/U730/X (STP_NR2_G_0P8)            0.03       2.36 r
+  core/use_gauss.solver/U736/X (STP_INV_S_0P65)           0.02       2.38 f
+  core/use_gauss.solver/U296/X (STP_NR2_G_0P5)            0.02       2.40 r
+  core/use_gauss.solver/U772/X (STP_EO3_0P5)              0.04       2.45 f
+  core/use_gauss.solver/U97/X (STP_EO3_1)                 0.08       2.52 f
+  core/use_gauss.solver/U773/X (STP_ND2_S_0P8)            0.02       2.54 r
+  core/use_gauss.solver/U250/X (STP_NR2_G_0P5)            0.01       2.56 f
+  core/use_gauss.solver/U814/X (STP_EO3_0P5)              0.04       2.60 r
+  core/use_gauss.solver/U377/X (STP_AOAI211_0P5)          0.02       2.62 f
+  core/use_gauss.solver/U816/X (STP_AOI31_0P5)            0.03       2.65 r
+  core/use_gauss.solver/U376/X (STP_AO22_0P5)             0.04       2.69 r
+  core/use_gauss.solver/selector_q_reg[19]/D (STP_FDPRBQ_1)
+                                                          0.00       2.69 r
+  data arrival time                                                  2.69
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/selector_q_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.88
+  data required time                                                 2.88
+  --------------------------------------------------------------------------
+  data required time                                                 2.88
+  data arrival time                                                 -2.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.18
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1558/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][3]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][3]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.06       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1558/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][3]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][3]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.06       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1558/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][3]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][3]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.06       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1558/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][3]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][3]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.06       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1558/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][3]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][3]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.06       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1560/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][5]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][5]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1560/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][5]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][5]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1560/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][5]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][5]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1560/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][5]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][5]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1560/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][5]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][5]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1559/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][4]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][4]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1559/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][4]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][4]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1559/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][4]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][4]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1559/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][4]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][4]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: core/use_gauss.solver/pivot_valid_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/use_gauss.solver/pivot_row_reg[7][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_encode_gauss  ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  mask_gauss         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/use_gauss.solver/pivot_valid_reg[19]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.00 r
+  core/use_gauss.solver/pivot_valid_reg[19]/Q (STP_FDPRBQ_1)
+                                                          0.05       0.05 f
+  core/use_gauss.solver/U875/X (STP_ND2_1P5)              0.02       0.07 r
+  core/use_gauss.solver/U876/X (STP_INV_2P5)              0.02       0.09 f
+  core/use_gauss.solver/U16/X (STP_ND3_2)                 0.02       0.11 r
+  core/use_gauss.solver/U877/X (STP_AOAI211_4)            0.03       0.13 f
+  core/use_gauss.solver/U878/X (STP_NR3_G_5)              0.04       0.17 r
+  core/use_gauss.solver/U238/X (STP_ND2_S_5)              0.02       0.20 f
+  core/use_gauss.solver/U886/X (STP_EO3_3)                0.03       0.23 f
+  core/use_gauss.solver/U888/X (STP_NR3_G_4)              0.03       0.26 r
+  core/use_gauss.solver/U390/X (STP_ND2_G_1)              0.03       0.29 f
+  core/use_gauss.solver/U236/X (STP_AO2BB2_V3_1)          0.03       0.31 r
+  core/use_gauss.solver/U235/X (STP_NR2B_3)               0.04       0.36 r
+  core/use_gauss.solver/U256/X (STP_ND2_G_1)              0.02       0.38 f
+  core/use_gauss.solver/U255/X (STP_EO3_0P5)              0.08       0.46 r
+  core/use_gauss.solver/U203/X (STP_ND2_G_1P5)            0.03       0.49 f
+  core/use_gauss.solver/U893/X (STP_NR2_G_5)              0.03       0.51 r
+  core/use_gauss.solver/U202/X (STP_ND2_S_1)              0.02       0.53 f
+  core/use_gauss.solver/U257/X (STP_EO3_0P5)              0.05       0.58 r
+  core/use_gauss.solver/U392/X (STP_ND2_G_1)              0.04       0.61 f
+  core/use_gauss.solver/U197/X (STP_NR3_G_4)              0.04       0.65 r
+  core/use_gauss.solver/U192/X (STP_ND2_S_1)              0.02       0.68 f
+  core/use_gauss.solver/U270/X (STP_EO3_0P5)              0.05       0.73 r
+  core/use_gauss.solver/U187/X (STP_ND2_G_1P5)            0.03       0.75 f
+  core/use_gauss.solver/U186/X (STP_NR2_G_5)              0.03       0.78 r
+  core/use_gauss.solver/U239/X (STP_AOAI211_2)            0.04       0.82 f
+  core/use_gauss.solver/U917/X (STP_NR3_G_4)              0.04       0.86 r
+  core/use_gauss.solver/U176/X (STP_ND2_S_3)              0.02       0.88 f
+  core/use_gauss.solver/U924/X (STP_EO3_3)                0.04       0.92 r
+  core/use_gauss.solver/U169/X (STP_ND2_G_4)              0.02       0.94 f
+  core/use_gauss.solver/U226/X (STP_NR2_8)                0.02       0.96 r
+  core/use_gauss.solver/U271/X (STP_ND2_G_1)              0.02       0.98 f
+  core/use_gauss.solver/U160/X (STP_AO2BB2_1)             0.02       1.00 r
+  core/use_gauss.solver/U240/X (STP_ND2_G_1)              0.03       1.03 f
+  core/use_gauss.solver/U18/X (STP_NR2_G_2)               0.04       1.07 r
+  core/use_gauss.solver/U152/X (STP_ND2_S_1)              0.02       1.10 f
+  core/use_gauss.solver/U941/X (STP_EO3_0P5)              0.04       1.14 f
+  core/use_gauss.solver/U148/X (STP_EO3_2)                0.08       1.21 r
+  core/use_gauss.solver/U14/X (STP_ND2_S_2)               0.02       1.23 f
+  core/use_gauss.solver/U146/X (STP_NR2_G_4)              0.03       1.26 r
+  core/use_gauss.solver/U224/X (STP_AOAI211_1)            0.05       1.31 f
+  core/use_gauss.solver/U223/X (STP_NR3_G_2)              0.06       1.37 r
+  core/use_gauss.solver/U132/X (STP_ND2_G_1P5)            0.02       1.39 f
+  core/use_gauss.solver/U288/X (STP_EO3_0P5)              0.05       1.44 r
+  core/use_gauss.solver/U128/X (STP_ND2_G_1P5)            0.03       1.47 f
+  core/use_gauss.solver/U127/X (STP_NR2_G_4)              0.03       1.50 r
+  core/use_gauss.solver/U121/X (STP_ND2_S_3)              0.02       1.52 f
+  core/use_gauss.solver/U966/X (STP_AO2BB2_V3_1)          0.02       1.54 r
+  core/use_gauss.solver/U118/X (STP_ND2_1P5)              0.03       1.56 f
+  core/use_gauss.solver/U117/X (STP_NR2_G_3P5)            0.03       1.59 r
+  core/use_gauss.solver/U13/X (STP_ND2_S_1P5)             0.02       1.61 f
+  core/use_gauss.solver/U394/X (STP_EO3_0P5)              0.05       1.66 r
+  core/use_gauss.solver/U110/X (STP_ND2_G_1P5)            0.03       1.68 f
+  core/use_gauss.solver/U108/X (STP_NR2_G_4)              0.03       1.71 r
+  core/use_gauss.solver/U316/X (STP_ND2_G_1)              0.02       1.74 f
+  core/use_gauss.solver/U101/X (STP_AO2BB2_1)             0.02       1.76 r
+  core/use_gauss.solver/U988/X (STP_ND2_G_2)              0.03       1.79 f
+  core/use_gauss.solver/U98/X (STP_NR2_G_4)               0.03       1.81 r
+  core/use_gauss.solver/U290/X (STP_ND2_G_1)              0.02       1.84 f
+  core/use_gauss.solver/U1000/X (STP_EO3_0P5)             0.04       1.88 r
+  core/use_gauss.solver/U1001/X (STP_EO3_0P5)             0.08       1.96 r
+  core/use_gauss.solver/U93/X (STP_ND2_S_1)               0.03       1.99 f
+  core/use_gauss.solver/U91/X (STP_NR2_G_2P5)             0.04       2.02 r
+  core/use_gauss.solver/U86/X (STP_ND2_S_1)               0.03       2.05 f
+  core/use_gauss.solver/U397/X (STP_EN3_1)                0.04       2.09 r
+  core/use_gauss.solver/U80/X (STP_ND2_S_1)               0.02       2.11 f
+  core/use_gauss.solver/U20/X (STP_NR2_G_2)               0.04       2.15 r
+  core/use_gauss.solver/U319/X (STP_ND2_G_1)              0.03       2.18 f
+  core/use_gauss.solver/U317/X (STP_EN3_1)                0.04       2.21 r
+  core/use_gauss.solver/U67/X (STP_ND2_S_1)               0.02       2.23 f
+  core/use_gauss.solver/U302/X (STP_NR2_G_0P5)            0.03       2.26 r
+  core/use_gauss.solver/U63/X (STP_ND2_S_1)               0.02       2.28 f
+  core/use_gauss.solver/U1050/X (STP_EO3_0P5)             0.04       2.32 f
+  core/use_gauss.solver/U60/X (STP_ND3_0P5)               0.02       2.34 r
+  core/use_gauss.solver/U1051/X (STP_AOAI211_0P75)        0.03       2.37 f
+  core/use_gauss.solver/U1052/X (STP_OAI21_1)             0.03       2.40 r
+  core/use_gauss.solver/U12/X (STP_ND2_S_2)               0.03       2.42 f
+  core/use_gauss.solver/U395/X (STP_NR3_G_1)              0.03       2.45 r
+  core/use_gauss.solver/U52/X (STP_ND2_S_1)               0.03       2.48 f
+  core/use_gauss.solver/U362/X (STP_NR2_G_0P5)            0.07       2.55 r
+  core/use_gauss.solver/U4/X (STP_INV_S_1)                0.08       2.63 f
+  core/use_gauss.solver/U1559/X (STP_AOI22_0P5)           0.05       2.68 r
+  core/use_gauss.solver/pivot_row_reg[7][4]/D (STP_FDPRBQ_1)
+                                                          0.00       2.68 r
+  data arrival time                                                  2.68
+
+  clock clk (rise edge)                                   3.12       3.12
+  clock network delay (ideal)                             0.00       3.12
+  clock uncertainty                                      -0.20       2.92
+  core/use_gauss.solver/pivot_row_reg[7][4]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.92 r
+  library setup time                                     -0.05       2.87
+  data required time                                                 2.87
+  --------------------------------------------------------------------------
+  data required time                                                 2.87
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+1

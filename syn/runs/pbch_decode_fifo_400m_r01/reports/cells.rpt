@@ -1,0 +1,63 @@
+ 
+****************************************
+Report : cell
+Design : pbch_decode
+Version: Q-2019.12-SP5-5
+Date   : Thu Oct 29 01:38:38 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U17                       STP_AN2_S_0P5   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.672000  
+U18                       STP_ND2_S_0P8   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.504000  
+U19                       STP_TIE0_1      um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.672000  
+U20                       STP_AN2_S_0P5   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.672000  
+U21                       STP_AN2_S_0P5   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.672000  
+U22                       STP_INV_S_0P65  um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.336000  
+U23                       STP_INV_S_0P65  um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.336000  
+U24                       STP_OAI22_0P5   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.840000  
+U25                       STP_NR2B_V1DG_1 um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.672000  
+U26                       STP_NR2_G_0P5   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.504000  
+U27                       STP_NR2_G_0P5   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.504000  
+U28                       STP_AN2_S_0P5   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.672000  
+U29                       STP_AN2_S_0P5   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.672000  
+U30                       STP_AN2_S_0P5   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.672000  
+U31                       STP_NR2B_V1DG_1 um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.672000  
+U32                       STP_AN2_S_0P5   um28nchslogl35hsl140f_ssgwc0p9v125c
+                                                          0.672000  
+correction                bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1
+                                                          8310.623853
+                                                                    h, n, p
+output_stage              recover                         2394.671959
+                                                                    h, n
+replay                    bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                                                          3028.871961
+                                                                    h, n, p
+selectors                 select_fifo                     945.503988
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 20 cells                                            14689.415760
+1

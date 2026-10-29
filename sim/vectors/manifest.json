@@ -1,0 +1,7 @@
+{
+  "vectors": 64,
+  "flat_defect_rows": 1032,
+  "seed": "0x202051220",
+  "decoder_weights": "0..4",
+  "construction_manifest": "8c65f63b6bdf3a482bb9357299144d82b50e6941ab6008de91c1f9029af33774"
+}

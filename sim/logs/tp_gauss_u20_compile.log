@@ -1,0 +1,47 @@
+
+Warning-[LINX_KRNL] Unsupported Linux kernel
+  Linux kernel '5.4.0-150-generic' is not supported.
+  Supported versions are 2.4* or 2.6*.
+
+Command: vcs +warn=noLNX_OS_VERUN +vcs+lic+wait -full64 -sverilog -timescale=1ns/1ps \
+-LDFLAGS -Wl,--no-as-needed +incdir+. +define+U20 -top pbch_encode_throughput_tb \
+-Mdir=sim/build/csrc_tp_gauss_u20 -o sim/build/simv_tp_gauss_u20 rtl/pbch/mask_direct.sv \
+rtl/pbch/mask_gauss.sv rtl/pbch/mask_hybrid.sv rtl/pbch/mask_table.sv rtl/pbch/encode.sv \
+sim/tb/pbch_encode_throughput_tb.sv -l sim/logs/tp_gauss_u20_compile.log
+                         Chronologic VCS (TM)
+      Version R-2020.12-SP1-1_Full64 -- Thu Oct 29 01:27:16 2026
+
+                    Copyright (c) 1991 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Parsing design file 'rtl/pbch/mask_direct.sv'
+Parsing design file 'rtl/pbch/mask_gauss.sv'
+Parsing design file 'rtl/pbch/mask_hybrid.sv'
+Parsing design file 'rtl/pbch/mask_table.sv'
+Parsing design file 'rtl/pbch/encode.sv'
+Parsing included file 'rtl/generated/constants.svh'.
+Back to file 'rtl/pbch/encode.sv'.
+Parsing design file 'sim/tb/pbch_encode_throughput_tb.sv'
+Top Level Modules:
+       pbch_encode_throughput_tb
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+
+1 module and 0 UDP read.
+recompiling module pbch_encode_throughput_tb
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x /home/leesr0222/hbf-pbch-clean-k512/sim/build/simv_tp_gauss_u20 ]; then chmod \
+a-x /home/leesr0222/hbf-pbch-clean-k512/sim/build/simv_tp_gauss_u20; fi
+g++  -o /home/leesr0222/hbf-pbch-clean-k512/sim/build/simv_tp_gauss_u20   -no-pie \
+-Wl,--no-as-needed -rdynamic  -Wl,-rpath='$ORIGIN'/simv_tp_gauss_u20.daidir -Wl,-rpath=./simv_tp_gauss_u20.daidir \
+-Wl,-rpath=/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib -L/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib \
+-Wl,-rpath-link=./   objs/amcQw_d.o   _28153_archive_1.so  SIM_l.o       rmapats_mop.o \
+rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lnuma -lvirsim \
+-lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+/home/leesr0222/hbf-pbch-clean-k512/sim/build/simv_tp_gauss_u20 up to date
+CPU time: .531 seconds to compile + .281 seconds to elab + .404 seconds to link

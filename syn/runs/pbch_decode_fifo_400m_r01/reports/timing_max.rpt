@@ -1,0 +1,1418 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 20
+Design : pbch_decode
+Version: Q-2019.12-SP5-5
+Date   : Thu Oct 29 01:38:37 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[6][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U133/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U114/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U681/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U906/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U15/X (STP_OAI21_0P5)                            0.03       2.06 r
+  replay/beat_q_reg[6][0]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[6][0]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[3][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U139/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U120/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U140/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U908/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U7/X (STP_OAI21_0P5)                             0.03       2.06 r
+  replay/beat_q_reg[3][0]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[3][0]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[7][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U131/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U112/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U132/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U904/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U18/X (STP_OAI21_0P5)                            0.03       2.06 r
+  replay/beat_q_reg[7][0]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[7][0]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[5][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U134/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U116/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U135/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U905/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U14/X (STP_OAI21_0P5)                            0.03       2.06 r
+  replay/beat_q_reg[5][0]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[5][0]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[1][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U143/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U123/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U144/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U901/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U9/X (STP_OAI21_0P5)                             0.03       2.06 r
+  replay/beat_q_reg[1][0]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[1][0]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[2][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U141/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U121/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U142/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U907/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U20/X (STP_OAI21_0P5)                            0.03       2.06 r
+  replay/beat_q_reg[2][0]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[2][0]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[3][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U139/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U120/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U140/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U899/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U10/X (STP_OAI21_0P5)                            0.03       2.06 r
+  replay/beat_q_reg[3][2]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[3][2]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[3][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U139/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U120/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U140/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U903/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U11/X (STP_OAI21_0P5)                            0.03       2.06 r
+  replay/beat_q_reg[3][1]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[3][1]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[6][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U133/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U114/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U681/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U897/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U6/X (STP_OAI21_0P5)                             0.03       2.06 r
+  replay/beat_q_reg[6][2]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[6][2]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[6][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U133/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U114/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U681/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U894/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U4/X (STP_OAI21_0P5)                             0.03       2.06 r
+  replay/beat_q_reg[6][1]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[6][1]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[7][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U131/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U112/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U132/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U895/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U5/X (STP_OAI21_0P5)                             0.03       2.06 r
+  replay/beat_q_reg[7][2]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[7][2]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[7][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U131/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U112/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U132/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U896/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U19/X (STP_OAI21_0P5)                            0.03       2.06 r
+  replay/beat_q_reg[7][1]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[7][1]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[5][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U134/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U116/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U135/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U898/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U17/X (STP_OAI21_0P5)                            0.03       2.06 r
+  replay/beat_q_reg[5][2]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[5][2]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[5][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U134/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U116/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U135/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U893/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U8/X (STP_OAI21_0P5)                             0.03       2.06 r
+  replay/beat_q_reg[5][1]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[5][1]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[1][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U143/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U123/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U144/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U891/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U16/X (STP_OAI21_0P5)                            0.03       2.06 r
+  replay/beat_q_reg[1][2]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[1][2]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[1][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U143/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U123/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U144/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U892/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U3/X (STP_OAI21_0P5)                             0.03       2.06 r
+  replay/beat_q_reg[1][1]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[1][1]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[2][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U141/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U121/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U142/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U900/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U12/X (STP_OAI21_0P5)                            0.03       2.06 r
+  replay/beat_q_reg[2][2]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[2][2]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[2][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U141/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U121/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U142/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U902/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U13/X (STP_OAI21_0P5)                            0.03       2.06 r
+  replay/beat_q_reg[2][1]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[2][1]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[6][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U133/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U114/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U681/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U906/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U15/X (STP_OAI21_0P5)                            0.03       2.06 r
+  replay/beat_q_reg[6][0]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[6][0]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+  Startpoint: correction/u_chien/terms_q_reg[4][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: replay/beat_q_reg[3][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pbch_decode        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  correction/u_chien/terms_q_reg[4][0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  correction/u_chien/terms_q_reg[4][0]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  correction/u_chien/U646/X (STP_INV_S_0P65)              0.10       0.18 r
+  correction/u_chien/U324/X (STP_OAI22_0P75)              0.13       0.31 f
+  correction/u_chien/U640/X (STP_INV_S_0P65)              0.12       0.43 r
+  correction/u_chien/U170/X (STP_OAI22_0P75)              0.11       0.54 f
+  correction/u_chien/U746/X (STP_INV_S_0P65)              0.08       0.61 r
+  correction/u_chien/U1808/X (STP_AOI22_0P5)              0.05       0.66 f
+  correction/u_chien/U1809/X (STP_EO3_0P5)                0.10       0.76 f
+  correction/u_chien/U1810/X (STP_EO3_0P5)                0.09       0.85 f
+  correction/u_chien/U1811/X (STP_EO3_0P5)                0.08       0.93 r
+  correction/u_chien/U908/X (STP_ND4_MM_1)                0.02       0.95 f
+  correction/u_chien/U1828/X (STP_AOI211_0P5)             0.03       0.98 r
+  correction/u_chien/U13/X (STP_OAI21_0P5)                0.03       1.00 f
+  correction/u_chien/U892/X (STP_NR4_0P5)                 0.14       1.14 r
+  correction/u_chien/correction_mask_o[48] (bch_chien_mask_stream_parallel_generic_10_4_572_64_1_1_409)
+                                                          0.00       1.14 r
+  correction/correction_mask_o[48] (bch_decoder_streaming_mask_parallel_generic_532_10_4_572_64_64_409_8_1_1_1)
+                                                          0.00       1.14 r
+  replay/mask_i[48] (bch_message_output_beatmask_generic_K512_R60_N572_T4_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY1)
+                                                          0.00       1.14 r
+  replay/U53/X (STP_NR4_0P5)                              0.03       1.17 f
+  replay/U803/X (STP_AN4_L_0P5)                           0.04       1.21 f
+  replay/U669/X (STP_ND4_MM_1)                            0.03       1.23 r
+  replay/U75/X (STP_OAI31_G_0P5)                          0.03       1.27 f
+  replay/U99/X (STP_INV_S_0P65)                           0.02       1.29 r
+  replay/U166/X (STP_OAI211_1)                            0.05       1.34 f
+  replay/U103/X (STP_INV_S_1)                             0.05       1.39 r
+  replay/U139/X (STP_AOAI211_0P5)                         0.25       1.64 f
+  replay/U120/X (STP_NR2_G_0P5)                           0.27       1.92 r
+  replay/U140/X (STP_BUF_1)                               0.08       2.00 r
+  replay/U908/X (STP_AOI22_0P5)                           0.03       2.03 f
+  replay/U7/X (STP_OAI21_0P5)                             0.03       2.06 r
+  replay/beat_q_reg[3][0]/D (STP_FDPRBQ_1)                0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  replay/beat_q_reg[3][0]/CK (STP_FDPRBQ_1)               0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.19
+
+
+1

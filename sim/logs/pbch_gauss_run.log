@@ -1,0 +1,11 @@
+Command: /home/leesr0222/hbf-pbch-clean-k512/sim/build/simv_pbch_gauss_0122 -l sim/logs/pbch_gauss_run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Oct 29 01:25 2026
+PASS PBCH encoder vectors=64 rows=1032
+$finish called from file "sim/tb/pbch_encode_tb.sv", line 221.
+$finish at simulation time              8715000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 8715000 ps
+CPU Time:      0.370 seconds;       Data structure size:   0.0Mb
+Thu Oct 29 01:25:03 2026

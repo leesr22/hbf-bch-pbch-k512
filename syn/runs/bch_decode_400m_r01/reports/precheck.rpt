@@ -1,0 +1,32 @@
+ 
+****************************************
+check_design summary:
+Version:     Q-2019.12-SP5-5
+Date:        Thu Oct 29 01:33:21 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      3
+    Unconnected ports (LINT-28)                                     2
+    Shorted outputs (LINT-31)                                       1
+
+Cells                                                              11
+    Cells do not drive (LINT-1)                                    11
+--------------------------------------------------------------------------------
+
+Warning: In design 'bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1', cell 'C578' does not drive any nets. (LINT-1)
+Warning: In design 'bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0', cell 'C14733' does not drive any nets. (LINT-1)
+Warning: In design 'bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0', cell 'C14740' does not drive any nets. (LINT-1)
+Warning: In design 'bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0', cell 'C14771' does not drive any nets. (LINT-1)
+Warning: In design 'bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0', cell 'C14801' does not drive any nets. (LINT-1)
+Warning: In design 'bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0', cell 'C14802' does not drive any nets. (LINT-1)
+Warning: In design 'bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0', cell 'C14828' does not drive any nets. (LINT-1)
+Warning: In design 'bch_berlekamp_massey_inversionless_shift_generic_10_6_409', cell 'C12225' does not drive any nets. (LINT-1)
+Warning: In design 'bch_berlekamp_massey_inversionless_shift_generic_10_6_409', cell 'C12226' does not drive any nets. (LINT-1)
+Warning: In design 'bch_berlekamp_massey_inversionless_shift_generic_10_6_409', cell 'C12234' does not drive any nets. (LINT-1)
+Warning: In design 'bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409', cell 'C91410' does not drive any nets. (LINT-1)
+Warning: In design 'bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0', port 'reread_first_i' is not connected to any nets. (LINT-28)
+Warning: In design 'bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0', port 'reread_last_i' is not connected to any nets. (LINT-28)
+Warning: In design 'bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409', output port 'correction_valid_o' is connected directly to output port 'busy_o'. (LINT-31)
+1

@@ -1,0 +1,8 @@
+block,configuration,workload,clock_mhz,cii_mean,cii_max,area_um2,engine_count,replicated_area_mm2,setup_slack_ns
+BCH_Encoder,"n572_k512_r60_t6_W128",continuous,500,5,5,1786.175972,480,0.857364467,0.160345
+BCH_Decoder,"n572_k512_r60_t6_W64",continuous_exactly_t,400,13,13,16707.935722,1560,26.064379726,0.277207
+PBCH_Encoder,"n572_k512_ell20_r40_t4_W64_ctx2_gauss",controlled_U0,320,10,10,8370.599865,1500,12.555899798,0.184462
+PBCH_Encoder,"n572_k512_ell20_r40_t4_W64_ctx2_gauss",controlled_U1,320,11.984252,14,8370.599865,1798,15.050338557,0.184462
+PBCH_Encoder,"n572_k512_ell20_r40_t4_W64_ctx2_gauss",controlled_U4,320,14.976378,18,8370.599865,2247,18.808737897,0.184462
+PBCH_Encoder,"n572_k512_ell20_r40_t4_W64_ctx2_gauss",controlled_U20,320,44,44,8370.599865,6600,55.245959109,0.184462
+PBCH_Decoder,"n572_k512_ell20_r40_t4_W64",continuous_exactly_t,400,12,12,14689.415760,1440,21.152758694,0.191791

@@ -1,0 +1,7 @@
+scheme,encoder,encoder_workload,encoder_area_um2,encoder_clock_mhz,encoder_cii_mean,encoder_engines,encoder_replicated_mm2,decoder,decoder_workload,decoder_area_um2,decoder_clock_mhz,decoder_cii,decoder_engines,decoder_replicated_mm2,total_replicated_mm2,vs_bch_percent,interpretation
+BCH_t6,bch_encode,continuous_4096,1786.175972,500,5,480,0.857364467,bch_decode,continuous_exactly_t_128,16707.935722,400,13,1560,26.064379726,26.921744193,0,reference
+PBCH_e20_t4,pbch_encode_gauss,controlled_U0,8370.599865,320,10,1500,12.555899798,pbch_decode,continuous_exactly_t_128,14689.415760,400,12,1440,21.152758694,33.708658492,25.209787,controlled service point; not a defect probability
+PBCH_e20_t4,pbch_encode_gauss,controlled_U1,8370.599865,320,11.984252,1798,15.050338557,pbch_decode,continuous_exactly_t_128,14689.415760,400,12,1440,21.152758694,36.203097251,34.475304,controlled service point; not a defect probability
+PBCH_e20_t4,pbch_encode_gauss,controlled_U4,8370.599865,320,14.976378,2247,18.808737897,pbch_decode,continuous_exactly_t_128,14689.415760,400,12,1440,21.152758694,39.961496591,48.435764,controlled service point; not a defect probability
+PBCH_e20_t4,pbch_encode_gauss,controlled_U20,8370.599865,320,44,6600,55.245959109,pbch_decode,continuous_exactly_t_128,14689.415760,400,12,1440,21.152758694,76.398717803,183.780714,controlled service point; not a defect probability
+

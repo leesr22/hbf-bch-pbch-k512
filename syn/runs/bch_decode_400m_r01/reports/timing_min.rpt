@@ -1,0 +1,838 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 5
+        -max_paths 20
+Design : bch_decode
+Version: Q-2019.12-SP5-5
+Date   : Thu Oct 29 01:35:59 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3849/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3849/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3849/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3849/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3849/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[2]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3848/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3848/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3848/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3848/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/degree_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/degree_q_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/degree_q_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/degree_q_reg[0]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3661/X (STP_OAI22_0P5)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/degree_q_reg[0]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/degree_q_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3848/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[1]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3852/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3852/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3852/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3852/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3852/X (STP_AOI32_1)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[3]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/g_beat_mask_output.u_message_output/fifo_count_q_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/fifo_count_q_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/g_beat_mask_output.u_message_output/fifo_count_q_reg[1]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/g_beat_mask_output.u_message_output/fifo_count_q_reg[1]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/g_beat_mask_output.u_message_output/U1229/X (STP_OAI21_0P5)
+                                                          0.02       0.05 f
+  core/g_beat_mask_output.u_message_output/fifo_count_q_reg[1]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/g_beat_mask_output.u_message_output/fifo_count_q_reg[1]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/degree_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/degree_q_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/degree_q_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/degree_q_reg[0]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3661/X (STP_OAI22_0P5)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/degree_q_reg[0]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/degree_q_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[0]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3485/X (STP_OA2BB2_0P5)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[0]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_berlekamp_massey_inversionless_shift_generic_10_6_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[0]/Q (STP_FDPRBQ_1)
+                                                          0.03       0.03 r
+  core/u_core/g_shift_window_bm.u_bm/U3485/X (STP_OA2BB2_0P5)
+                                                          0.02       0.05 f
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[0]/D (STP_FDPRBQ_1)
+                                                          0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  core/u_core/g_shift_window_bm.u_bm/length_state_q_reg[0]/CK (STP_FDPRBQ_1)
+                                                          0.00       0.20 r
+  library hold time                                       0.00       0.20
+  data required time                                                 0.20
+  --------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+1

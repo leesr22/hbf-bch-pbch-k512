@@ -1,0 +1,82 @@
+{
+  "name": "bch_572_532_t4",
+  "message_bits": 532,
+  "m": 10,
+  "t": 4,
+  "primitive_polynomial": 1033,
+  "generator_polynomial": 1661815299739,
+  "redundancy_bits": 40,
+  "codeword_bits": 572,
+  "mother_codeword_bits": 1023,
+  "mother_message_bits": 983,
+  "shortening_bits": 451,
+  "code_rate": 0.9300699300699301,
+  "next_t": 5,
+  "next_t_redundancy_bits": 50,
+  "next_t_code_rate": 0.9140893470790378,
+  "cyclotomic_cosets": [
+    [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    [
+      3,
+      6,
+      12,
+      24,
+      48,
+      96,
+      192,
+      384,
+      768,
+      513
+    ],
+    [
+      5,
+      10,
+      20,
+      40,
+      80,
+      160,
+      320,
+      640,
+      257,
+      514
+    ],
+    [
+      7,
+      14,
+      28,
+      56,
+      112,
+      224,
+      448,
+      896,
+      769,
+      515
+    ]
+  ],
+  "minimal_polynomials": [
+    1033,
+    1039,
+    1293,
+    2041
+  ],
+  "bit_mapping": "Integer bit i is coefficient x^i. Shortening fixes mother-code coefficients x^572..x^1022 to zero and transmits x^0..x^571. The systematic message occupies x^r..x^(r+k-1); parity occupies x^0..x^(r-1).",
+  "primitive_polynomial_hex": "0x409",
+  "generator_polynomial_hex": "0x182ebe91e9b",
+  "minimal_polynomials_hex": [
+    "0x409",
+    "0x40f",
+    "0x50d",
+    "0x7f9"
+  ]
+}

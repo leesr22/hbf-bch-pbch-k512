@@ -1,0 +1,1928 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 20
+Design : bch_decode
+Version: Q-2019.12-SP5-5
+Date   : Thu Oct 29 01:35:59 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchslogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U243/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U27/X (STP_ND2_S_0P8)
+                                                          0.04       1.77 f
+  core/g_beat_mask_output.u_message_output/U224/X (STP_INV_S_0P65)
+                                                          0.09       1.86 r
+  core/g_beat_mask_output.u_message_output/U241/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1276/X (STP_AOI22_0P5)
+                                                          0.03       1.95 f
+  core/g_beat_mask_output.u_message_output/U6/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U240/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U26/X (STP_ND2_S_0P8)
+                                                          0.04       1.77 f
+  core/g_beat_mask_output.u_message_output/U220/X (STP_INV_S_0P65)
+                                                          0.09       1.86 r
+  core/g_beat_mask_output.u_message_output/U238/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1275/X (STP_AOI22_0P5)
+                                                          0.03       1.95 f
+  core/g_beat_mask_output.u_message_output/U5/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U243/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U27/X (STP_ND2_S_0P8)
+                                                          0.04       1.77 f
+  core/g_beat_mask_output.u_message_output/U224/X (STP_INV_S_0P65)
+                                                          0.09       1.86 r
+  core/g_beat_mask_output.u_message_output/U241/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1276/X (STP_AOI22_0P5)
+                                                          0.03       1.95 f
+  core/g_beat_mask_output.u_message_output/U6/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U240/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U26/X (STP_ND2_S_0P8)
+                                                          0.04       1.77 f
+  core/g_beat_mask_output.u_message_output/U220/X (STP_INV_S_0P65)
+                                                          0.09       1.86 r
+  core/g_beat_mask_output.u_message_output/U238/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1275/X (STP_AOI22_0P5)
+                                                          0.03       1.95 f
+  core/g_beat_mask_output.u_message_output/U5/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U243/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U27/X (STP_ND2_S_0P8)
+                                                          0.04       1.77 f
+  core/g_beat_mask_output.u_message_output/U224/X (STP_INV_S_0P65)
+                                                          0.09       1.86 r
+  core/g_beat_mask_output.u_message_output/U241/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1276/X (STP_AOI22_0P5)
+                                                          0.03       1.95 f
+  core/g_beat_mask_output.u_message_output/U6/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U240/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U26/X (STP_ND2_S_0P8)
+                                                          0.04       1.77 f
+  core/g_beat_mask_output.u_message_output/U220/X (STP_INV_S_0P65)
+                                                          0.09       1.86 r
+  core/g_beat_mask_output.u_message_output/U238/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1275/X (STP_AOI22_0P5)
+                                                          0.03       1.95 f
+  core/g_beat_mask_output.u_message_output/U5/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.34 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U243/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U27/X (STP_ND2_S_0P8)
+                                                          0.04       1.77 f
+  core/g_beat_mask_output.u_message_output/U224/X (STP_INV_S_0P65)
+                                                          0.09       1.86 r
+  core/g_beat_mask_output.u_message_output/U241/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1276/X (STP_AOI22_0P5)
+                                                          0.03       1.95 f
+  core/g_beat_mask_output.u_message_output/U6/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.34 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U240/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U26/X (STP_ND2_S_0P8)
+                                                          0.04       1.77 f
+  core/g_beat_mask_output.u_message_output/U220/X (STP_INV_S_0P65)
+                                                          0.09       1.86 r
+  core/g_beat_mask_output.u_message_output/U238/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1275/X (STP_AOI22_0P5)
+                                                          0.03       1.95 f
+  core/g_beat_mask_output.u_message_output/U5/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U243/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U27/X (STP_ND2_S_0P8)
+                                                          0.04       1.77 f
+  core/g_beat_mask_output.u_message_output/U224/X (STP_INV_S_0P65)
+                                                          0.09       1.86 r
+  core/g_beat_mask_output.u_message_output/U241/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1276/X (STP_AOI22_0P5)
+                                                          0.03       1.95 f
+  core/g_beat_mask_output.u_message_output/U6/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[2][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U240/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U26/X (STP_ND2_S_0P8)
+                                                          0.04       1.77 f
+  core/g_beat_mask_output.u_message_output/U220/X (STP_INV_S_0P65)
+                                                          0.09       1.86 r
+  core/g_beat_mask_output.u_message_output/U238/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1275/X (STP_AOI22_0P5)
+                                                          0.03       1.95 f
+  core/g_beat_mask_output.u_message_output/U5/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[4][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U58/X (STP_INV_S_0P65)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U118/X (STP_NR2_G_0P5)
+                                                          0.03       1.54 r
+  core/g_beat_mask_output.u_message_output/U147/X (STP_AO2BB2_0P5)
+                                                          0.04       1.59 r
+  core/g_beat_mask_output.u_message_output/U51/X (STP_ND2_S_1)
+                                                          0.02       1.61 f
+  core/g_beat_mask_output.u_message_output/U178/X (STP_NR2_G_0P5)
+                                                          0.04       1.65 r
+  core/g_beat_mask_output.u_message_output/U176/X (STP_ND3_0P5)
+                                                          0.04       1.69 f
+  core/g_beat_mask_output.u_message_output/U175/X (STP_OAOI211_0P5)
+                                                          0.04       1.73 r
+  core/g_beat_mask_output.u_message_output/U227/X (STP_INV_S_0P65)
+                                                          0.10       1.83 f
+  core/g_beat_mask_output.u_message_output/U131/X (STP_BUF_1)
+                                                          0.08       1.91 f
+  core/g_beat_mask_output.u_message_output/U1218/X (STP_AOI222_0P5)
+                                                          0.06       1.97 r
+  core/g_beat_mask_output.u_message_output/U1021/X (STP_INV_S_0P65)
+                                                          0.02       1.99 f
+  core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.99 f
+  data arrival time                                                  1.99
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.03       2.27
+  data required time                                                 2.27
+  --------------------------------------------------------------------------
+  data required time                                                 2.27
+  data arrival time                                                 -1.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.34 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U58/X (STP_INV_S_0P65)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U118/X (STP_NR2_G_0P5)
+                                                          0.03       1.54 r
+  core/g_beat_mask_output.u_message_output/U147/X (STP_AO2BB2_0P5)
+                                                          0.04       1.59 r
+  core/g_beat_mask_output.u_message_output/U51/X (STP_ND2_S_1)
+                                                          0.02       1.61 f
+  core/g_beat_mask_output.u_message_output/U178/X (STP_NR2_G_0P5)
+                                                          0.04       1.65 r
+  core/g_beat_mask_output.u_message_output/U176/X (STP_ND3_0P5)
+                                                          0.04       1.69 f
+  core/g_beat_mask_output.u_message_output/U175/X (STP_OAOI211_0P5)
+                                                          0.04       1.73 r
+  core/g_beat_mask_output.u_message_output/U227/X (STP_INV_S_0P65)
+                                                          0.10       1.83 f
+  core/g_beat_mask_output.u_message_output/U131/X (STP_BUF_1)
+                                                          0.08       1.91 f
+  core/g_beat_mask_output.u_message_output/U1218/X (STP_AOI222_0P5)
+                                                          0.06       1.97 r
+  core/g_beat_mask_output.u_message_output/U1021/X (STP_INV_S_0P65)
+                                                          0.02       1.99 f
+  core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.99 f
+  data arrival time                                                  1.99
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.03       2.27
+  data required time                                                 2.27
+  --------------------------------------------------------------------------
+  data required time                                                 2.27
+  data arrival time                                                 -1.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U58/X (STP_INV_S_0P65)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U118/X (STP_NR2_G_0P5)
+                                                          0.03       1.54 r
+  core/g_beat_mask_output.u_message_output/U147/X (STP_AO2BB2_0P5)
+                                                          0.04       1.59 r
+  core/g_beat_mask_output.u_message_output/U51/X (STP_ND2_S_1)
+                                                          0.02       1.61 f
+  core/g_beat_mask_output.u_message_output/U178/X (STP_NR2_G_0P5)
+                                                          0.04       1.65 r
+  core/g_beat_mask_output.u_message_output/U176/X (STP_ND3_0P5)
+                                                          0.04       1.69 f
+  core/g_beat_mask_output.u_message_output/U175/X (STP_OAOI211_0P5)
+                                                          0.04       1.73 r
+  core/g_beat_mask_output.u_message_output/U227/X (STP_INV_S_0P65)
+                                                          0.10       1.83 f
+  core/g_beat_mask_output.u_message_output/U131/X (STP_BUF_1)
+                                                          0.08       1.91 f
+  core/g_beat_mask_output.u_message_output/U1218/X (STP_AOI222_0P5)
+                                                          0.06       1.97 r
+  core/g_beat_mask_output.u_message_output/U1021/X (STP_INV_S_0P65)
+                                                          0.02       1.99 f
+  core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.99 f
+  data arrival time                                                  1.99
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.03       2.27
+  data required time                                                 2.27
+  --------------------------------------------------------------------------
+  data required time                                                 2.27
+  data arrival time                                                 -1.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.34 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U58/X (STP_INV_S_0P65)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U118/X (STP_NR2_G_0P5)
+                                                          0.03       1.54 r
+  core/g_beat_mask_output.u_message_output/U147/X (STP_AO2BB2_0P5)
+                                                          0.04       1.59 r
+  core/g_beat_mask_output.u_message_output/U51/X (STP_ND2_S_1)
+                                                          0.02       1.61 f
+  core/g_beat_mask_output.u_message_output/U178/X (STP_NR2_G_0P5)
+                                                          0.04       1.65 r
+  core/g_beat_mask_output.u_message_output/U176/X (STP_ND3_0P5)
+                                                          0.04       1.69 f
+  core/g_beat_mask_output.u_message_output/U175/X (STP_OAOI211_0P5)
+                                                          0.04       1.73 r
+  core/g_beat_mask_output.u_message_output/U227/X (STP_INV_S_0P65)
+                                                          0.10       1.83 f
+  core/g_beat_mask_output.u_message_output/U131/X (STP_BUF_1)
+                                                          0.08       1.91 f
+  core/g_beat_mask_output.u_message_output/U1218/X (STP_AOI222_0P5)
+                                                          0.06       1.97 r
+  core/g_beat_mask_output.u_message_output/U1021/X (STP_INV_S_0P65)
+                                                          0.02       1.99 f
+  core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.99 f
+  data arrival time                                                  1.99
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.03       2.27
+  data required time                                                 2.27
+  --------------------------------------------------------------------------
+  data required time                                                 2.27
+  data arrival time                                                 -1.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U58/X (STP_INV_S_0P65)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U118/X (STP_NR2_G_0P5)
+                                                          0.03       1.54 r
+  core/g_beat_mask_output.u_message_output/U147/X (STP_AO2BB2_0P5)
+                                                          0.04       1.59 r
+  core/g_beat_mask_output.u_message_output/U51/X (STP_ND2_S_1)
+                                                          0.02       1.61 f
+  core/g_beat_mask_output.u_message_output/U178/X (STP_NR2_G_0P5)
+                                                          0.04       1.65 r
+  core/g_beat_mask_output.u_message_output/U176/X (STP_ND3_0P5)
+                                                          0.04       1.69 f
+  core/g_beat_mask_output.u_message_output/U175/X (STP_OAOI211_0P5)
+                                                          0.04       1.73 r
+  core/g_beat_mask_output.u_message_output/U227/X (STP_INV_S_0P65)
+                                                          0.10       1.83 f
+  core/g_beat_mask_output.u_message_output/U131/X (STP_BUF_1)
+                                                          0.08       1.91 f
+  core/g_beat_mask_output.u_message_output/U1218/X (STP_AOI222_0P5)
+                                                          0.06       1.97 r
+  core/g_beat_mask_output.u_message_output/U1021/X (STP_INV_S_0P65)
+                                                          0.02       1.99 f
+  core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.99 f
+  data arrival time                                                  1.99
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[1][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.03       2.27
+  data required time                                                 2.27
+  --------------------------------------------------------------------------
+  data required time                                                 2.27
+  data arrival time                                                 -1.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U1061/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U33/X (STP_ND2_S_0P8)
+                                                          0.03       1.76 f
+  core/g_beat_mask_output.u_message_output/U206/X (STP_INV_S_0P65)
+                                                          0.09       1.85 r
+  core/g_beat_mask_output.u_message_output/U234/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1274/X (STP_AOI22_0P5)
+                                                          0.03       1.94 f
+  core/g_beat_mask_output.u_message_output/U7/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U1061/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U33/X (STP_ND2_S_0P8)
+                                                          0.03       1.76 f
+  core/g_beat_mask_output.u_message_output/U206/X (STP_INV_S_0P65)
+                                                          0.09       1.85 r
+  core/g_beat_mask_output.u_message_output/U234/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1274/X (STP_AOI22_0P5)
+                                                          0.03       1.94 f
+  core/g_beat_mask_output.u_message_output/U7/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U1061/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U33/X (STP_ND2_S_0P8)
+                                                          0.03       1.76 f
+  core/g_beat_mask_output.u_message_output/U206/X (STP_INV_S_0P65)
+                                                          0.09       1.85 r
+  core/g_beat_mask_output.u_message_output/U234/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1274/X (STP_AOI22_0P5)
+                                                          0.03       1.94 f
+  core/g_beat_mask_output.u_message_output/U7/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.29
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.34 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U1061/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U33/X (STP_ND2_S_0P8)
+                                                          0.03       1.76 f
+  core/g_beat_mask_output.u_message_output/U206/X (STP_INV_S_0P65)
+                                                          0.09       1.85 r
+  core/g_beat_mask_output.u_message_output/U234/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1274/X (STP_AOI22_0P5)
+                                                          0.03       1.94 f
+  core/g_beat_mask_output.u_message_output/U7/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.29
+
+
+  Startpoint: core/u_core/u_chien/terms_q_reg[3][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bch_decode         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_decoder_message_stream_generic_512_10_6_60_572_64_409_1_1_1_1
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+  bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0
+                     ZeroWLM               um28nchslogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/u_core/u_chien/terms_q_reg[3][5]/CK (STP_FDPRBQ_1)
+                                                          0.00 #     0.00 r
+  core/u_core/u_chien/terms_q_reg[3][5]/Q (STP_FDPRBQ_1)
+                                                          0.09       0.09 f
+  core/u_core/u_chien/U916/X (STP_INV_S_0P65)             0.09       0.18 r
+  core/u_core/u_chien/U441/X (STP_OAI22_0P75)             0.12       0.30 f
+  core/u_core/u_chien/U472/X (STP_INV_S_0P65)             0.11       0.41 r
+  core/u_core/u_chien/U318/X (STP_OAI22_0P75)             0.10       0.51 f
+  core/u_core/u_chien/U797/X (STP_INV_S_0P65)             0.07       0.58 r
+  core/u_core/u_chien/U135/X (STP_OAI22_0P75)             0.07       0.65 f
+  core/u_core/u_chien/U642/X (STP_INV_S_0P65)             0.05       0.71 r
+  core/u_core/u_chien/U72/X (STP_OAI22_0P5)               0.05       0.75 f
+  core/u_core/u_chien/U501/X (STP_INV_S_0P65)             0.03       0.79 r
+  core/u_core/u_chien/U2520/X (STP_AOI22_0P5)             0.04       0.82 f
+  core/u_core/u_chien/U3496/X (STP_EO3_0P5)               0.10       0.92 f
+  core/u_core/u_chien/U3497/X (STP_EO3_0P5)               0.09       1.01 f
+  core/u_core/u_chien/U3498/X (STP_EO3_0P5)               0.08       1.09 r
+  core/u_core/u_chien/U667/X (STP_OAI211_0P5)             0.03       1.12 f
+  core/u_core/u_chien/U666/X (STP_AOI21_0P75)             0.03       1.15 r
+  core/u_core/u_chien/U488/X (STP_ND4_MM_1)               0.02       1.17 f
+  core/u_core/u_chien/U1055/X (STP_NR4_0P5)               0.15       1.32 r
+  core/u_core/u_chien/correction_mask_o[20] (bch_chien_mask_stream_parallel_generic_10_6_572_64_1_1_409)
+                                                          0.00       1.32 r
+  core/u_core/correction_mask_o[20] (bch_decoder_streaming_mask_parallel_generic_512_10_6_572_64_64_409_8_0_0_1_1_1)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/mask_i[20] (bch_message_output_beatmask_generic_K512_R60_N572_T6_WIDTH64_TAG_BITS8_CONTEXTS2_DATA_INDEPENDENT_MASK_READY0)
+                                                          0.00       1.32 r
+  core/g_beat_mask_output.u_message_output/U107/X (STP_NR4_0P5)
+                                                          0.03       1.35 f
+  core/g_beat_mask_output.u_message_output/U135/X (STP_ND4_MM_1)
+                                                          0.04       1.39 r
+  core/g_beat_mask_output.u_message_output/U61/X (STP_NR3_G_0P8)
+                                                          0.02       1.40 f
+  core/g_beat_mask_output.u_message_output/U3/X (STP_ND4_MM_1)
+                                                          0.03       1.43 r
+  core/g_beat_mask_output.u_message_output/U60/X (STP_OAI21_0P75)
+                                                          0.03       1.46 f
+  core/g_beat_mask_output.u_message_output/U59/X (STP_AOI21_0P75)
+                                                          0.03       1.49 r
+  core/g_beat_mask_output.u_message_output/U160/X (STP_NR2_G_0P5)
+                                                          0.02       1.51 f
+  core/g_beat_mask_output.u_message_output/U57/X (STP_ND3B_V1DG_1)
+                                                          0.14       1.64 f
+  core/g_beat_mask_output.u_message_output/U1061/X (STP_OAOI211_0P5)
+                                                          0.09       1.73 r
+  core/g_beat_mask_output.u_message_output/U33/X (STP_ND2_S_0P8)
+                                                          0.03       1.76 f
+  core/g_beat_mask_output.u_message_output/U206/X (STP_INV_S_0P65)
+                                                          0.09       1.85 r
+  core/g_beat_mask_output.u_message_output/U234/X (STP_BUF_1)
+                                                          0.06       1.92 r
+  core/g_beat_mask_output.u_message_output/U1274/X (STP_AOI22_0P5)
+                                                          0.03       1.94 f
+  core/g_beat_mask_output.u_message_output/U7/X (STP_OAI21_0P5)
+                                                          0.02       1.97 r
+  core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]/D (STP_FDPRBQ_1)
+                                                          0.00       1.97 r
+  data arrival time                                                  1.97
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  clock uncertainty                                      -0.20       2.30
+  core/g_beat_mask_output.u_message_output/beat_q_reg[11][1]/CK (STP_FDPRBQ_1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.05       2.25
+  data required time                                                 2.25
+  --------------------------------------------------------------------------
+  data required time                                                 2.25
+  data arrival time                                                 -1.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.29
+
+
+1

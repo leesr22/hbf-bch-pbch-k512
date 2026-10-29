@@ -1,0 +1,57 @@
+ 
+****************************************
+check_design summary:
+Version:     Q-2019.12-SP5-5
+Date:        Thu Oct 29 01:40:49 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     36
+    Unconnected ports (LINT-28)                                    28
+    Shorted outputs (LINT-31)                                       5
+    Constant outputs (LINT-52)                                      3
+
+Cells                                                               1
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'pbch_encode_gauss', port 'message_first' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_gauss', port 'message_last' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_gauss', port 'read_tag[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_gauss', port 'read_tag[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_gauss', port 'read_tag[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_gauss', port 'read_tag[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_gauss', port 'read_tag[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_gauss', port 'read_tag[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_gauss', port 'read_tag[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_gauss', port 'read_tag[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_gauss', port 'read_first' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_gauss', port 'read_last' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'message_first' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'message_last' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'read_tag[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'read_tag[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'read_tag[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'read_tag[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'read_tag[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'read_tag[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'read_tag[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'read_tag[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'read_first' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'read_last' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'codeword_valid_bits[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'codeword_valid_bits[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_METHOD0', port 'table_supported' is not connected to any nets. (LINT-28)
+Warning: In design 'mask_gauss', port 'done_ready' is not connected to any nets. (LINT-28)
+Warning: In design 'pbch_encode_gauss', output port 'codeword_valid_bits[1]' is connected directly to output port 'codeword_valid_bits[0]'. (LINT-31)
+Warning: In design 'pbch_encode_METHOD0', output port 'codeword_valid_bits[5]' is connected directly to output port 'codeword_last'. (LINT-31)
+Warning: In design 'pbch_encode_METHOD0', output port 'codeword_valid_bits[5]' is connected directly to output port 'codeword_valid_bits[2]'. (LINT-31)
+Warning: In design 'pbch_encode_METHOD0', output port 'codeword_valid_bits[5]' is connected directly to output port 'codeword_valid_bits[3]'. (LINT-31)
+Warning: In design 'pbch_encode_METHOD0', output port 'codeword_valid_bits[5]' is connected directly to output port 'codeword_valid_bits[4]'. (LINT-31)
+Warning: In design 'pbch_encode_gauss', the same net is connected to more than one pin on submodule 'core'. (LINT-33)
+   Net 'codeword_valid_bits[0]' is connected to pins 'message_first', 'message_last'', 'read_tag[7]', 'read_tag[6]', 'read_tag[5]', 'read_tag[4]', 'read_tag[3]', 'read_tag[2]', 'read_tag[1]', 'read_tag[0]', 'read_first', 'read_last'.
+Warning: In design 'pbch_encode_gauss', output port 'codeword_valid_bits[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'pbch_encode_gauss', output port 'codeword_valid_bits[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'pbch_encode_gauss', output port 'table_supported' is connected directly to 'logic 1'. (LINT-52)
+1

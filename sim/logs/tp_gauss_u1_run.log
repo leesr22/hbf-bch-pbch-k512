@@ -1,0 +1,11 @@
+Command: /home/leesr0222/hbf-pbch-clean-k512/sim/build/simv_tp_gauss_u1 -l sim/logs/tp_gauss_u1_run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Oct 29 01:49 2026
+THROUGHPUT method=0 U=1 txns=128 mean_cii=11.984252 max_cii=14 max_hii=16 max_latency=25 elapsed=1545
+$finish called from file "sim/tb/pbch_encode_throughput_tb.sv", line 182.
+$finish at simulation time              3103000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 3103000 ps
+CPU Time:      0.340 seconds;       Data structure size:   0.0Mb
+Thu Oct 29 01:49:22 2026

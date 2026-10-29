@@ -1,0 +1,11 @@
+Command: /home/leesr0222/hbf-pbch-clean-k512/sim/build/simv_dec_primary -l sim/logs/pbch_decoder_primary_run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Oct 29 01:28 2026
+PASS paper PBCH decoder vectors=64
+$finish called from file "/home/leesr0222/hbf-pbch-paper-k512/sim/tb/tb_paper_pbch_decoder.sv", line 126.
+$finish at simulation time              7400000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 7400000 ps
+CPU Time:      0.470 seconds;       Data structure size:   0.1Mb
+Thu Oct 29 01:28:25 2026

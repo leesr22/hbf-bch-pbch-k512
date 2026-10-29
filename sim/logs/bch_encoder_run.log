@@ -1,0 +1,11 @@
+Command: /home/leesr0222/hbf-pbch-clean-k512/sim/build/simv_bch_enc -l sim/logs/bch_encoder_run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12-SP1-1_Full64; Runtime version R-2020.12-SP1-1_Full64;  Oct 29 01:50 2026
+PASS fair BCH t6 W128 vectors=64
+$finish called from file "/home/leesr0222/hbf-pbch-paper-k512/sim/tb/tb_bch_encoder_w128.sv", line 48.
+$finish at simulation time               651000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 651000 ps
+CPU Time:      0.370 seconds;       Data structure size:   0.0Mb
+Thu Oct 29 01:50:24 2026
